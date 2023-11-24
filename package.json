@@ -11,10 +11,11 @@
     "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.6.0",
     "parcel": "^2.6.0",
     "parcel-reporter-clean-dist": "^1.0.4",
-    "posthtml-include": "^1.7.4"
+    "postcss": "^8.4.31",
+    "posthtml-include": "^1.7.4",
+    "tailwindcss": "^3.3.5"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead"
 }
