@@ -4,16 +4,22 @@ module.exports = {
   theme: {
     screens: {
       sm: '480px',
-
       md: '768px',
-
       lg: '1024px',
-
       xl: '1280px',
-
-      '2xl': '1536px',
-
-      '3xl': '1920px',
+      xxl: '1536px',
+      xxxl: '1920px',
+    },
+    container: {
+      padding: {
+        DEFAULT: '1vw',
+        sm: '5px',
+        md: '10px',
+        lg: '15px',
+        xl: '40px',
+        xxl: '48px',
+        xxxl: '80px',
+      },
     },
     colors: {
       beige: '#F1DFC3',

@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-8xl;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+  }
+  h2 {
+    @apply text-[4rem];
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+  }
+  h3 {
+    @apply text-[2.875rem];
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+  }
+  html {
+    font-family: 'Lato', sans-serif;
+  }
+}
