@@ -27,7 +27,7 @@ module.exports = {
       green: '#727D57',
       greenBTN: '#357A38',
       yellow: '#DFB53B',
-      black: '#DAD8D5',
+      black: '#474745',
       gray: '#DAD8D5',
       grayLight: '#EFEFEE',
     },
