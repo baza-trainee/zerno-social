@@ -2,10 +2,10 @@
   "name": "Zerno",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://STIg89.github.io/Zerno",
+  "homepage": "https://baza-trainee.github.io/zerno-social",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /Zerno/"
+    "build": "parcel build src/*.html --public-url /zerno-social/"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"
