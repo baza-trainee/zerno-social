@@ -1,20 +1,24 @@
 <header id="header">
-  <div class="container flex justify-between items-center py-2.5">
+  <div class="container flex justify-between items-center">
     <svg class="w-[114px] h-[38px]">
       <use href="./images/sprite.svg#icon-zernoLogo"></use>
     </svg>
     <div class="inline-flex gap-[30px]">
-      <div class="flex items-center gap-[9px]">
+      <button
+        class="flex items-center gap-[9px]"
+        type="button"
+        aria-label="Switch language"
+      >
         <span class="text-green">UA</span
         ><svg class="w-5 h-5">
           <use href="./images/sprite.svg#icon-arrowD"></use>
         </svg>
-      </div>
-      <nav>
+      </button>
+      <button class="py-2.5" type="button" aria-label="Open menu">
         <svg class="w-11 h-11">
           <use href="./images/sprite.svg#icon-burger"></use>
         </svg>
-      </nav>
+      </button>
     </div>
   </div>
 </header>
