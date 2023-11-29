@@ -21,6 +21,5 @@
   html {
     font-family: 'Lato', sans-serif;
     @apply text-black;
-    font-size: 18px;
   }
 }
