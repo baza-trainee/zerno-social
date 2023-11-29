@@ -4,7 +4,7 @@
 
 @layer base {
   h1 {
-    @apply text-[80px];
+    @apply text-[60px];
     font-family: 'Manrope', sans-serif;
     font-weight: 700;
   }
@@ -22,4 +22,8 @@
     font-family: 'Lato', sans-serif;
     @apply text-black;
   }
+}
+
+.is-hidden {
+  @apply translate-x-full opacity-0;
 }
