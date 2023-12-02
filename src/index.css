@@ -25,5 +25,5 @@
 }
 
 .is-hidden {
-  @apply translate-x-full opacity-0;
+  @apply opacity-0 -z-10;
 }
