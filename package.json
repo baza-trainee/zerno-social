@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "modern-normalize": "^1.1.0",
-    "swiper": "^11.0.5"
+    "swiper": "^11.0.5",
+    "tw-elements": "^1.0.0"
   },
   "devDependencies": {
     "parcel": "^2.6.0",
