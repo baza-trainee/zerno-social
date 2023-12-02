@@ -4,17 +4,17 @@
 
 @layer base {
   h1 {
-    @apply text-[60px];
+    @apply text-[96px];
     font-family: 'Manrope', sans-serif;
     font-weight: 700;
   }
   h2 {
-    @apply text-[30px];
+    @apply text-[64px];
     font-family: 'Manrope', sans-serif;
     font-weight: 600;
   }
   h3 {
-    @apply text-[30px];
+    @apply text-[30px] lg:text-[40px] xxl:text-[46px];
     font-family: 'Manrope', sans-serif;
     font-weight: 600;
   }
@@ -25,7 +25,7 @@
 }
 
 .is-hidden {
-  @apply translate-x-full opacity-0;
+  @apply opacity-0 -z-10;
 }
 
 .directionsSwiper .swiper-slide {
