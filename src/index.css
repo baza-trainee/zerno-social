@@ -27,3 +27,26 @@
 .is-hidden {
   @apply opacity-0 -z-10;
 }
+
+.directionsSwiper .swiper-slide {
+  width: fit-content;
+}
+
+.directionsSwiper .swiper-slide:last-child {
+  margin: 0 !important;
+}
+
+.directionsSwiper .swiper-pagination-bullet {
+  background-color: #DAD8D5;
+  opacity: 1;
+  width: 1rem;
+  height: 1rem;
+}
+
+.directionsSwiper .swiper-pagination-bullet-active {
+  background-color: #727D57;
+}
+
+.directionsSwiper .swiper-pagination {
+  bottom: 2.25rem !important;
+}
