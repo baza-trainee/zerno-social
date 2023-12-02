@@ -14,25 +14,13 @@
     font-weight: 600;
   }
   h3 {
-    @apply text-[46px];
+    @apply text-[30px] lg:text-[40px] xxl:text-[46px];
     font-family: 'Manrope', sans-serif;
     font-weight: 600;
   }
   html {
     font-family: 'Lato', sans-serif;
     @apply text-black;
-  }
-
-  @media screen and (max-width: 1536px) {
-    h3 {
-      @apply text-[40px];
-    }
-  }
-
-  @media screen and (max-width: 1280px) {
-    h3 {
-      @apply text-[30px];
-    }
   }
 }
 
