@@ -1,1 +1,150 @@
-<h2>team</h2>
+<div
+  class="container xxxl:px-[80px] xl:px-[48px] xl:py-[60px] lg:px-[32px] lg:py-[40px] px-[36px]"
+>
+  <h2
+    class="text-center xxl:text-[64px] xl:text-[46px] lg:text-[40px] text-3xl
+    xxl:mb-[56px] lg:mb-[48px] mb-[40px]"
+  >
+    Команда
+  </h2>
+  <div class="team-swiper-container overflow-hidden relative">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide text-center flex flex-col items-center justify-center">
+        <img
+          src="images/team_anastiya.png"
+          alt="Анастасія-Марія Романків"
+          class="xxxl:mb-[48px] xl:mb-[44px] lg:mb-[32px] mb-[30px] rounded-full
+          xxxl:w-[280px] xxl:w-[240px] xl:w-[200px] lg:w-[160px] w-[150px]"
+        />
+        <span
+          class="xxl:text-[40px] xl:text-2xl lg:text-xl text-lg xxl:leading-[48px]
+          xl:leading-9 lg:leading-6 w-[80%]"
+        >
+          Анастасія-Марія Романків
+        </span>
+      </div>
+      <div class="swiper-slide text-center flex flex-col items-center">
+        <img
+          src="images/team_ana.png"
+          alt="Аня Сомова"
+          class="xxxl:mb-[48px] xl:mb-[44px] lg:mb-[32px] mb-[30px] rounded-full
+          xxxl:w-[280px] xxl:w-[240px] xl:w-[200px] lg:w-[160px] w-[150px]"
+        />
+        <span
+          class="xxl:text-[40px] xl:text-2xl lg:text-xl text-lg xxl:leading-[48px]
+          xl:leading-9 lg:leading-6 w-[50%]"
+        >
+          Аня Сомова
+        </span>
+      </div>
+      <div class="swiper-slide text-center flex flex-col items-center">
+        <img
+          src="images/team_andriy.png"
+          alt="Андрій Перегінець"
+          class="xxxl:mb-[48px] xl:mb-[44px] lg:mb-[32px] mb-[30px] rounded-full
+          xxxl:w-[280px] xxl:w-[240px] xl:w-[200px] lg:w-[160px] w-[150px]"
+        />
+        <span
+          class="xxl:text-[40px] xl:text-2xl lg:text-xl text-lg xxl:leading-[48px]
+          xl:leading-9 lg:leading-6 w-[50%]"
+        >
+          Андрій Перегінець
+        </span>
+      </div>
+      <div class="swiper-slide text-center flex flex-col items-center">
+        <img
+          src="images/team_victor.png"
+          alt="Віктор Пилипчук"
+          class="xxxl:mb-[48px] xl:mb-[44px] lg:mb-[32px] mb-[30px] rounded-full
+          xxxl:w-[280px] xxl:w-[240px] xl:w-[200px] lg:w-[160px] w-[150px]"
+        />
+        <span
+          class="xxl:text-[40px] xl:text-2xl lg:text-xl text-lg xxl:leading-[48px]
+          xl:leading-9 lg:leading-6 w-[50%]"
+        >
+          Віктор Пилипчук
+        </span>
+      </div>
+      <div class="swiper-slide text-center flex flex-col items-center">
+        <img
+          src="images/team_dmitro_pop.png"
+          alt="Дмитро Попович"
+          class="xxxl:mb-[48px] xl:mb-[44px] lg:mb-[32px] mb-[30px] rounded-full
+          xxxl:w-[280px] xxl:w-[240px] xl:w-[200px] lg:w-[160px] w-[150px]"
+        />
+        <span
+          class="xxl:text-[40px] xl:text-2xl lg:text-xl text-lg xxl:leading-[48px]
+          xl:leading-9 lg:leading-6 w-[50%]"
+        >
+          Дмитро Попович
+        </span>
+      </div>
+      <div class="swiper-slide text-center flex flex-col items-center">
+        <img
+          src="images/team_dmitro_rus.png"
+          alt="Дмитро Русаков"
+          class="xxxl:mb-[48px] xl:mb-[44px] lg:mb-[32px] mb-[30px] rounded-full
+          xxxl:w-[280px] xxl:w-[240px] xl:w-[200px] lg:w-[160px] w-[150px]"
+        />
+        <span
+          class="xxl:text-[40px] xl:text-2xl lg:text-xl text-lg xxl:leading-[48px]
+          xl:leading-9 lg:leading-6 w-[50%]"
+        >
+          Дмитро Русаков
+        </span>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+
+<script>
+  const teamSwiperContainer = document.querySelector('.team-swiper-container');
+
+  const swiper = new Swiper(teamSwiperContainer, {
+    slidesPerView: 2,
+    spaceBetween: 15,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      480: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 0,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      },
+      1024: {
+        slidesPerView: 5,
+        spaceBetween: 0,
+        pagination: false,
+      },
+      1280: {
+        slidesPerView: 5,
+        spaceBetween: 0,
+        pagination: false,
+      },
+      1536: {
+        slidesPerView: 5,
+        spaceBetween: 0,
+        pagination: false,
+      },
+      1920: {
+        slidesPerView: 5,
+        spaceBetween: 0,
+        pagination: false,
+      },
+    },
+  });
+</script>
