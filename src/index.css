@@ -9,7 +9,7 @@
     font-weight: 700;
   }
   h2 {
-    @apply text-[64px];
+    @apply text-[30px] lg:text-[40px] xl:text-[46px] xxl:text-[64px] ;
     font-family: 'Manrope', sans-serif;
     font-weight: 600;
   }
