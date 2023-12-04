@@ -1,8 +1,74 @@
-<html>
+<!DOCTYPE html>
+<html lang="ru">
   <head>
-    <title>Error 404</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zerno</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700;900&family=Manrope:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
+    <link rel="icon" href="favicon.svg" type="image/x-icon" />
+    <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <p>404</p>
+    <include src="./partials/header/header.html"></include>
+    <section
+      class="container flex lg:flex-row flex-col xl:pt-[104px] xl:pb-[218px]
+      lg:pt-[110px] lg:pb-[193px] sm:pt-[40px] md:pb-[90px] sm:pb-[72px] pt-[26px]
+      pb-[36px] xxl:pl-[308px] xxl:pr-[230px] xl:pl-[208px] xl:pr-[40px]"
+    >
+      <div
+        class="flex lg:flex-col flex-row-reverse lg:justify-start justify-center
+        xxl:mr-[222px] lg:mr-[119px] lg:space-y-[30px] lg:mb-0 md:mb-[90px]
+        sm:mb-[64px] mb-[78px] lg:gap-x-0 gap-x-[11px]"
+      >
+        <img
+          src="images/404_symbol_commnuty.png"
+          alt="Zerno Сommunity"
+          class="xxxl:w-[346px] xxl:w-[559px] xl:w-[215px] lg:w-[361px] md:w-[150px] w-[60px]"
+        />
+        <img
+          src="images/404_symbol_sun.png"
+          alt="Zerno Sun"
+          class="xxl:w-[150px] lg:w-[100px] md:w-[150px] w-[60px]"
+        />
+        <img
+          src="images/404_symbol_plant.png"
+          alt="Zerno Plant"
+          class="xxl:w-[150px] lg:w-[100px] md:w-[150px] w-[60px] lg:order-3"
+        />
+      </div>
+      <div class="flex flex-col">
+        <h1
+          class="text-green xxl:text-[80px] lg:text-[64px] md:text-[80px]
+          text-[30px] leading-none xxl:mb-[192px] lg:mb-[100px] mb-[48px]
+          lg:text-left text-center"
+        >
+          404
+        </h1>
+        <p
+          class="xxl:text-[40px] xl:text-[30px] md:text-[40px] text-[18px]
+          lg:mb-[56px] mb-[32px] lg:text-left text-center"
+        >
+          На жаль, здається, ми загубили шлях до цієї сторінки. Але не
+          переймайтеся! Дозвольте нам вас налаштовувати на нові пригоди.
+        </p>
+        <p
+          class="xxl:text-[40px] xl:text-[30px] md:text-[40px] text-[18px] lg:text-left text-center"
+        >
+          Поверніться на
+          <a href="./index.html" class="text-[#1c62cbfa] underline">
+            головну сторінку
+          </a>
+          та разом ми знайдемо ключ до найкращих моментів !
+        </p>
+      </div>
+    </section>
+    <include src="./partials/footer.html"></include>
   </body>
 </html>
