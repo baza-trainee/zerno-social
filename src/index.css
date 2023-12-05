@@ -9,7 +9,7 @@
     line-height: 120%;
   }
   h2 {
-    @apply text-[30px] lg:text-[40px] xl:text-[46px] xxl:text-[64px] ;
+    @apply text-[30px] lg:text-[40px] xl:text-[46px] xxl:text-[64px];
     font-family: 'Manrope', sans-serif;
     font-weight: 600;
   }
@@ -28,32 +28,86 @@
   @apply opacity-0 -z-10;
 }
 
-.directionsSwiper .swiper-slide {
-  width: fit-content;
+.directionsSwiper .swiper-slide,
+.activitiesSwiper .swiper-slide {
+  width: fit-content !important;
 }
 
 .directionsSwiper .swiper-slide:last-child {
   margin: 0 !important;
 }
 
-.directionsSwiper .swiper-pagination-bullet {
+.directionsSwiper .swiper-pagination-bullet,
+.activitiesSwiper .swiper-pagination-bullet {
   background-color: #dad8d5;
   opacity: 1;
   width: 1rem;
   height: 1rem;
 }
 
-.directionsSwiper .swiper-pagination-bullet-active {
+.directionsSwiper .swiper-pagination-bullet-active,
+.activitiesSwiper .swiper-pagination-bullet-active {
   background-color: #727d57;
 }
 
 .directionsSwiper .swiper-pagination {
   bottom: 2.25rem !important;
-  @apply translate-x-full opacity-0 hidden;
 }
 
+.activities .swiper-button-next::after,
+.swiper-button-prev::after {
+  content: '';
+}
+
+.activities .swiper-button-prev,
+.activities .swiper-button-next {
+  position: relative;
+  bottom: 300px;
+}
+
+.activities .swiper-button-prev {
+  left: -80px;
+}
+
+.activities .swiper-button-next {
+  right: -80px;
+}
+
+.activities .categories .active {
+  background: #727d57;
+  color: white !important;
+}
+
+.activitiesSwiper .swiper-pagination {
+  bottom: -48px;
+  position: relative;
+}
+
+.activities .swiper {
+  overflow-y: visible;
+  height: 550px;
+}
+
+.activities .swiper-wrapper {
+  height: fit-content;
+}
+
+@media screen and (max-width: 1536px) {
+  .activities .swiper-button-prev,
+  .activities .swiper-button-next {
+    bottom: 580px;
+  }
+
+  .activities .swiper-button-prev {
+    left: -40px;
+  }
+
+  .activities .swiper-button-next {
+    right: 0;
+  }
+}
 .swiper-pagination-bullet {
-  background-color: #727D57; /* Замените на ваш цвет */
+  background-color: #727d57; /* Замените на ваш цвет */
 }
 
 .gallery-swiper-button-prev,

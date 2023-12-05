@@ -1,4 +1,4 @@
 import './js/menu';
-import './js/swipers';
-import './js/faq'; 
-import './js/map'; 
+import './js/faq';
+import './js/activities';
+import './js/map';
