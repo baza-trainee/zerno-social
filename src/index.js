@@ -1,3 +1,3 @@
 import './js/menu';
-import './js/swipers';
-import './js/faq'; 
+import './js/faq';
+import './js/activities';
