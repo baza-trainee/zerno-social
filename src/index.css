@@ -4,12 +4,12 @@
 
 @layer base {
   h1 {
-    @apply text-[96px];
-    font-family: 'Manrope', sans-serif;
-    font-weight: 700;
+    @apply text-[18px] md:text-[40px] lg:text-[20px] xl:text-[28px] xxl:text-[40px];
+    font-family: 'Lato', sans-serif;
+    line-height: 120%;
   }
   h2 {
-    @apply text-[30px] md:text-[40px] lg:text-[46px] xxl:text-[64px];
+    @apply text-[30px] lg:text-[40px] xl:text-[46px] xxl:text-[64px];
     font-family: 'Manrope', sans-serif;
     font-weight: 600;
   }
@@ -39,7 +39,7 @@
 
 .directionsSwiper .swiper-pagination-bullet,
 .activitiesSwiper .swiper-pagination-bullet {
-  background-color: #DAD8D5;
+  background-color: #dad8d5;
   opacity: 1;
   width: 1rem;
   height: 1rem;
@@ -47,15 +47,16 @@
 
 .directionsSwiper .swiper-pagination-bullet-active,
 .activitiesSwiper .swiper-pagination-bullet-active {
-  background-color: #727D57;
+  background-color: #727d57;
 }
 
 .directionsSwiper .swiper-pagination {
   bottom: 2.25rem !important;
 }
 
-.activities .swiper-button-next::after, .swiper-button-prev::after {
-  content: "";
+.activities .swiper-button-next::after,
+.swiper-button-prev::after {
+  content: '';
 }
 
 .activities .swiper-button-prev,
@@ -73,7 +74,7 @@
 }
 
 .activities .categories .active {
-  background: #727D57;
+  background: #727d57;
   color: white !important;
 }
 
@@ -91,10 +92,9 @@
   height: fit-content;
 }
 
-@media screen and (max-width: 1536px){
+@media screen and (max-width: 1536px) {
   .activities .swiper-button-prev,
   .activities .swiper-button-next {
-
     bottom: 580px;
   }
 
@@ -105,4 +105,28 @@
   .activities .swiper-button-next {
     right: 0;
   }
+}
+.swiper-pagination-bullet {
+  background-color: #727d57; /* Замените на ваш цвет */
+}
+
+.gallery-swiper-button-prev,
+.gallery-swiper-button-next {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+}
+
+.gallery-swiper-button-prev {
+  left: 10px;
+  transform: translateY(-50%);
+  background-image: url(images/gallery_arrow_prev.png);
+}
+
+.gallery-swiper-button-next {
+  right: 10px;
+  transform: translateY(-50%);
+  background-image: url(images/gallery_arrow_next.png);
 }
