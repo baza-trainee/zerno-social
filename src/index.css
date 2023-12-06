@@ -20,7 +20,7 @@
   }
   html {
     font-family: 'Lato', sans-serif;
-    @apply text-black;
+    @apply scroll-smooth text-black;
   }
 }
 
