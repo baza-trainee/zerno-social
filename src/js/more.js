@@ -23,12 +23,14 @@
   }
 
   function toggleCard(articleId, show) {
-    const selectedCard = document.querySelector(`[data-card="${articleId}"]`);
+    const selectedCard = document.querySelectorAll(`[data-card]`);
     const selectedCardMore = document.querySelector(
       `[data-more="${articleId}"]`
     );
 
-    selectedCard.classList.toggle('hidden', show);
+    selectedCard.forEach(card => {
+      card.classList.toggle('hidden', show);
+    });
     selectedCardMore.classList.toggle('hidden', !show);
   }
 })();
