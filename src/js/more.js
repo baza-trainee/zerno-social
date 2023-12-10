@@ -14,24 +14,22 @@
 
   function showMore(event) {
     const articleId = event.currentTarget.getAttribute('readMoreBtn');
-    toggleCard(articleId, true);
+    toggleCard(articleId);
   }
 
   function hideMore(event) {
     const articleId = event.currentTarget.getAttribute('closeMoreBtn');
-    toggleCard(articleId, false);
+    toggleCard(articleId);
   }
 
-  function toggleCard(articleId, show) {
-    const selectedCard = document.querySelectorAll(`[data-card]`);
+  function toggleCard(articleId) {
+    const selectedCard = document.querySelector(`[data-card =${articleId}]`);
     const selectedCardMore = document.querySelector(
       `[data-more="${articleId}"]`
     );
 
-    selectedCard.forEach(card => {
-      card.classList.toggle('hidden', show);
-    });
-    selectedCardMore.classList.toggle('hidden', !show);
+    selectedCard.classList.toggle('hidden');
+    selectedCardMore.classList.toggle('hidden');
   }
 })();
 
