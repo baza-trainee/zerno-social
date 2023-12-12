@@ -1,54 +1,85 @@
 <section
-  id="activities"
   class="activities container px-20 py-[120px] max-xxl:px-3 py-[100px] max-xl:py-[70px] max-xl:py-[50px]"
 >
   <h2 class="text-black text-center mb-14">Що ми робимо</h2>
-  <div class="container px-16 max-xxxl:px-[73px] max-xxl:px-0">
-    <div class="categories flex gap-4 mb-12 max-xl:mb-10 max-lg:hidden">
+  <div class="container px-16 relative max-xxxl:px-[73px] max-xxl:px-0">
+    <div class="filter hidden max-lg:inline-block">
+      <button>
+        <svg class="w-11 h-11">
+          <use href="images/sprite.svg#icon-filter"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="categories flex gap-4 mb-12 max-xl:mb-10 max-lg:hidden max-lg:absolute max-lg:flex-col max-lg:w-50 max-lg:bg-white max-lg:z-10 max-lg:rounded-lg max-lg:p-10 ">
+      <div class='hidden max-lg:flex max-lg:justify-between'>
+        <p class='text-3xl'>Фільтр</p>
+        <button class='close'>
+          <svg class="w-6 h-6">
+            <use href="images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
       <button
-        class="active w-48 text-center text-green text-2xl border-[0.5px] border-green rounded-3xl px-4 py-2 max-xl:text-base max-xl:w-fit"
+        class="active category w-48 text-center text-green text-2xl border-[0.5px] border-green rounded-3xl px-4 py-2 max-xl:text-base max-xl:w-fit"
+      >
+        Усі
+      </button>
+      <button
+        class="category w-48 text-center text-green text-2xl border-[0.5px] border-green rounded-3xl px-4 py-2 max-xl:text-base max-xl:w-fit"
       >
         Для дітей
       </button>
       <button
-        class="w-48 text-center text-green text-2xl border-[0.5px] border-green rounded-3xl px-4 py-2 max-xl:text-base max-xl:w-fit"
+        class="category w-48 text-center text-green text-2xl border-[0.5px] border-green rounded-3xl px-4 py-2 max-xl:text-base max-xl:w-fit"
       >
         Для жінок
       </button>
       <button
-        class="w-48 text-center text-green text-2xl border-[0.5px] border-green rounded-3xl px-4 py-2 max-xl:text-base max-xl:w-fit"
+        class="category w-48 text-center text-green text-2xl border-[0.5px] border-green rounded-3xl px-4 py-2 max-xl:text-base max-xl:w-fit"
       >
         Містецтво
       </button>
       <button
-        class="w-48 text-center text-green text-2xl border-[0.5px] border-green rounded-3xl px-4 py-2 max-xl:text-base max-xl:w-fit"
+        class="category w-48 text-center text-green text-2xl border-[0.5px] border-green rounded-3xl px-4 py-2 max-xl:text-base max-xl:w-fit"
       >
         Дозвілля
       </button>
       <button
-        class="text-center text-green text-2xl border-[0.5px] border-green rounded-3xl px-4 py-2 max-xl:text-base max-xl:w-fit"
+        class="category text-center text-green text-2xl border-[0.5px] border-green rounded-3xl px-4 py-2 max-xl:text-base max-xl:w-fit"
       >
         Екологія та довкілля
       </button>
     </div>
-    <button class="filter hidden max-lg:inline-block">
-      <svg class="w-11 h-11">
-        <use href="images/sprite.svg#icon-filter"></use>
-      </svg>
-    </button>
     <div class="swiper activitiesSwiper max-xxl:mx-3">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="ml-2 border-green border-[1px] rounded-lg w-fit p-4">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide">
+          <article class="ml-2 border-green border-[1px] rounded-lg w-fit p-4">
             <img class="mb-4" src="images/activities-mock.jpg" alt="mock" />
-            <p class="text-xl">М/К “Виготовлення мотанки”</p>
-            <span
-              class="inline-block bg-yellow text-white rounded-lg text-sm p-2 my-2 text-center"
-              >діти 4-9 років</span
-            >
+            <h3 class="text-xl">English speaking club</h3>
+            <span class="inline-block bg-yellow text-white rounded-lg text-sm p-2 my-2 text-center">для жінок</span>
             <p class="max-w-[360px] mb-6">
-              Авьттпдррпдпожлоо апжпдпдржжророжд аппппо пжрржжржржрлржртлитлжи
-              ажалмдссммдмсд
+              Ми граємось, стоїмо на голові, в планці, на одній нозі, чи кидаємо один одному м'яч, називаючи тварину, або рослину английськю, Ми змагаємось за найбільшу кількість вивчених англійськіх слів, оскільки переможець місяця отримає приз! Ми придумуємо сценки, імпровізуємо і дивимось мультики англійською! Це найкраща англиійстка в світі і наші діти щоразу щасливіші,  бо впевнені!
+            </p>
+            <div class="flex items-center gap-2">
+              <svg class="w-7 h-7">
+                <use href="images/sprite.svg#icon-question"></use>
+              </svg>
+              <span
+              >За подробицями завітай у наш
+                <a href="" class="text-blue cursor-pointer">telegram</a></span
+              >
+            </div>
+            <div></div>
+          </article>
+        </li>
+        <li class="swiper-slide">
+          <article class="ml-2 border-green border-[1px] rounded-lg w-fit p-4">
+            <img class="mb-4" src="images/activities-mock.jpg" alt="mock" />
+            <h3 class="text-xl">Йога для дітей та дорослих</h3>
+            <span class="inline-block bg-yellow text-white rounded-lg text-sm p-2 my-2 text-center">для дітей</span>
+            <span class="inline-block bg-yellow text-white rounded-lg text-sm p-2 my-2 text-center">для жінок</span>
+            <p class="max-w-[360px] mb-6">
+              Займаємось йогою для початківців, яка допомагає зняти стрес, зменшити рівень тривожності у дитей та жінок, робить тіло гнучкішим та здоровішим. Рівна постава - запорука здоров'я та ознака успішної людини!
             </p>
             <div class="flex items-center gap-2">
               <svg class="w-7 h-7">
@@ -60,19 +91,15 @@
               >
             </div>
             <div></div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="ml-2 border-green border-[1px] rounded-lg w-fit p-4">
+          </article>
+        </li>
+        <li class="swiper-slide">
+          <article class="ml-2 border-green border-[1px] rounded-lg w-fit p-4">
             <img class="mb-4" src="images/activities-mock.jpg" alt="mock" />
-            <p class="text-xl">М/К “Виготовлення мотанки”</p>
-            <span
-              class="inline-block bg-yellow text-white rounded-lg text-sm p-2 my-2 text-center"
-              >діти 4-9 років</span
-            >
+            <h3 class="text-xl">М/К “Вибійка”</h3>
+            <span class="inline-block bg-yellow text-white rounded-lg text-sm p-2 my-2 text-center">для дітей</span>
             <p class="max-w-[360px] mb-6">
-              Авьттпдррпдпожлоо апжпдпдржжророжд аппппо пжрржжржржрлржртлитлжи
-              ажалмдссммдмсд
+              Давня техніка декорування текстилю шляхом перенесення відбитку з різьбленої дошки. Дsти створюють власний орнамент на одязі та домашньому текстилі. Розвиваємо креативне мислення та впринтовуємо в підсвідомість позитивні символи природи та традиційні орнаменти.
             </p>
             <div class="flex items-center gap-2">
               <svg class="w-7 h-7">
@@ -84,19 +111,16 @@
               >
             </div>
             <div></div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="ml-2 border-green border-[1px] rounded-lg w-fit p-4">
+          </article>
+        </li>
+        <li class="swiper-slide">
+          <article class="ml-2 border-green border-[1px] rounded-lg w-fit p-4">
             <img class="mb-4" src="images/activities-mock.jpg" alt="mock" />
-            <p class="text-xl">М/К “Виготовлення мотанки”</p>
-            <span
-              class="inline-block bg-yellow text-white rounded-lg text-sm p-2 my-2 text-center"
-              >діти 4-9 років</span
-            >
+            <h3 class="text-xl">М/К “Виготовлення мотанки”</h3>
+            <span class="inline-block bg-yellow text-white rounded-lg text-sm p-2 my-2 text-center">для дітей</span>
+            <span class="inline-block bg-yellow text-white rounded-lg text-sm p-2 my-2 text-center">для дорослих</span>
             <p class="max-w-[360px] mb-6">
-              Авьттпдррпдпожлоо апжпдпдржжророжд аппппо пжрржжржржрлржртлитлжи
-              ажалмдссммдмсд
+              Прекрасний сімейний майстер-клас, куди можна прийти трьома поколіннями та створити свої обереги. Крутити мотанки під силу всім. Прекрасні ляльки сповнені тепла Ваших рук, заряджені Вашими думками, стануть незамінним оберегом Вашої оселі. Ми використовуємо лише натуральні матеріали, дотримуємося автентичної технології, не використовуємо гострих предметів. Приходьте та відчуйте дух українського автентичного мистецтва виготовлення ляльки-мотанки. Виготовлення мотанки - чудовий майстер-клас для дорослих і дітей.
             </p>
             <div class="flex items-center gap-2">
               <svg class="w-7 h-7">
@@ -108,19 +132,15 @@
               >
             </div>
             <div></div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="ml-2 border-green border-[1px] rounded-lg w-fit p-4">
+          </article>
+        </li>
+        <li class="swiper-slide">
+          <article class="ml-2 border-green border-[1px] rounded-lg w-fit p-4">
             <img class="mb-4" src="images/activities-mock.jpg" alt="mock" />
-            <p class="text-xl">М/К “Виготовлення мотанки”</p>
-            <span
-              class="inline-block bg-yellow text-white rounded-lg text-sm p-2 my-2 text-center"
-              >діти 4-9 років</span
-            >
+            <h3 class="text-xl">М/К “Ебру”</h3>
+            <span class="inline-block bg-yellow text-white rounded-lg text-sm p-2 my-2 text-center">для дітей</span>
             <p class="max-w-[360px] mb-6">
-              Авьттпдррпдпожлоо апжпдпдржжророжд аппппо пжрржжржржрлржртлитлжи
-              ажалмдссммдмсд
+              Ебру - живопис на воді, для якого не потрібно бути художником, бо це інтуїтивний живопис - це чари  на воді, де ви спробуєте сотворити свій шедевр  і потім цю картину перевести на папір або на сумку, на одежу. Неймовірні емоціі, які перенесуть вас до казки
             </p>
             <div class="flex items-center gap-2">
               <svg class="w-7 h-7">
@@ -132,57 +152,139 @@
               >
             </div>
             <div></div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="ml-2 border-green border-[1px] rounded-lg w-fit p-4">
+          </article>
+        </li>
+        <li class="swiper-slide">
+          <article class="ml-2 border-green border-[1px] rounded-lg w-fit p-4">
             <img class="mb-4" src="images/activities-mock.jpg" alt="mock" />
-            <p class="text-xl">М/К “Виготовлення мотанки”</p>
-            <span
-              class="inline-block bg-yellow text-white rounded-lg text-sm p-2 my-2 text-center"
-              >діти 4-9 років</span
-            >
+            <h3 class="text-xl">М/К “Писанкарство” </h3>
+            <span class="inline-block bg-yellow text-white rounded-lg text-sm p-2 my-2 text-center">для дітей</span>
             <p class="max-w-[360px] mb-6">
-              Авьттпдррпдпожлоо апжпдпдржжророжд аппппо пжрржжржржрлржртлитлжи
-              ажалмдссммдмсд
+              Давня традиція розписувати яйця воском, яка майже втрачена на селах, оскількі простіше вікорістовувати наклейкі. Але ми відроджуємо це містичне дійство, яке  символізує саме народження життя!
             </p>
             <div class="flex items-center gap-2">
               <svg class="w-7 h-7">
                 <use href="images/sprite.svg#icon-question"></use>
               </svg>
               <span
-                >За подробицями завітай у наш
+              >За подробицями завітай у наш
                 <a href="" class="text-blue cursor-pointer">telegram</a></span
               >
             </div>
             <div></div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="ml-2 border-green border-[1px] rounded-lg w-fit p-4">
+          </article>
+        </li>
+        <li class="swiper-slide">
+          <article class="ml-2 border-green border-[1px] rounded-lg w-fit p-4">
             <img class="mb-4" src="images/activities-mock.jpg" alt="mock" />
-            <p class="text-xl">М/К “Виготовлення мотанки”</p>
-            <span
-              class="inline-block bg-yellow text-white rounded-lg text-sm p-2 my-2 text-center"
-              >діти 4-9 років</span
-            >
+            <h3 class="text-xl">М/К “Мандали”</h3>
+            <span class="inline-block bg-yellow text-white rounded-lg text-sm p-2 my-2 text-center">для жінок</span>
             <p class="max-w-[360px] mb-6">
-              Авьттпдррпдпожлоо апжпдпдржжророжд аппппо пжрржжржржрлржртлитлжи
-              ажалмдссммдмсд
+              Ми будемо не просто створювати Мандали, а закладати в неї особливі емоції, особливий настрій, хорошу енергетику, свої бажання, те, що ви хочете реалізувати в своєму житті. Цей майстер-клас допоможе визначити життєві орієнтири для щасливого плавання по відкритому океану життя. На майстер-класі буде практика планування ваших цілей та мрій та творче перетворення їх реальність. На учасників чекає практика глибокого відпочинку та оновлення сил в атмосфері тепла, краси та творчості.
             </p>
             <div class="flex items-center gap-2">
               <svg class="w-7 h-7">
                 <use href="images/sprite.svg#icon-question"></use>
               </svg>
               <span
-                >За подробицями завітай у наш
+              >За подробицями завітай у наш
                 <a href="" class="text-blue cursor-pointer">telegram</a></span
               >
             </div>
             <div></div>
-          </div>
-        </div>
-      </div>
+          </article>
+        </li>
+        <li class="swiper-slide">
+          <article class="ml-2 border-green border-[1px] rounded-lg w-fit p-4">
+            <img class="mb-4" src="images/activities-mock.jpg" alt="mock" />
+            <h3 class="text-xl">М/К “Свічки з віску і трави Карпат” </h3>
+            <span class="inline-block bg-yellow text-white rounded-lg text-sm p-2 my-2 text-center">для жінок</span>
+            <span class="inline-block bg-yellow text-white rounded-lg text-sm p-2 my-2 text-center">містецтво</span>
+            <span class="inline-block bg-yellow text-white rounded-lg text-sm p-2 my-2 text-center">екологія та довкілля</span>
+            <p class="max-w-[360px] mb-6">
+              На Майстер-класі ми вчимося робити свічки. Гості заходу дізнаються тонкощі наповнення свічок травами і маслами, особливості скручування, запалювання і енергетичної роботи.
+              Свічки ручної роботи виготовляються з натурального воску, який стає податливим від тепла Ваших рук і формується в красиву і елегантну свічку. Робити свічки своїми руками - це неймовірне задоволення, а свічка із воску стане чудовою прикрасою Вашої оселі.
+              Декорування свічки своїми руками дозволяє проявити максимум фантазії. Простота створення свічок своїми руками робить цей майстер-клас доступним для всіх.
+              Медові свічки своїми руками - це чудове заняття для своєрідної медитації. Запах меду піднімає настрій і заспокоює нерви. Користь свічок з вощини очевидна, оскільки всі матеріали екологічно чисті.
+            </p>
+            <div class="flex items-center gap-2">
+              <svg class="w-7 h-7">
+                <use href="images/sprite.svg#icon-question"></use>
+              </svg>
+              <span
+              >За подробицями завітай у наш
+                <a href="" class="text-blue cursor-pointer">telegram</a></span
+              >
+            </div>
+            <div></div>
+          </article>
+        </li>
+        <li class="swiper-slide">
+          <article class="ml-2 border-green border-[1px] rounded-lg w-fit p-4">
+            <img class="mb-4" src="images/activities-mock.jpg" alt="mock" />
+            <h3 class="text-xl">М/К “Миловаріння” </h3>
+            <span class="inline-block bg-yellow text-white rounded-lg text-sm p-2 my-2 text-center">для жінок</span>
+            <span class="inline-block bg-yellow text-white rounded-lg text-sm p-2 my-2 text-center">дозвілля</span>
+            <p class="max-w-[360px] mb-6">
+              Миловаріння – не тільки цікаве та медитативне заняття, а ще й дуже корисне. Ми поділимося з вами секретами створення мила, покажемо варіанти роботи з формою та кольорами.
+              Звісно, розкажемо вам про тонкощі створення мила у формі квітів та з додаванням сухих квітів.
+              Кожен учасникам матиме змогу створити власноруч власний кусочок мила і забрати його з собою додому.
+            </p>
+            <div class="flex items-center gap-2">
+              <svg class="w-7 h-7">
+                <use href="images/sprite.svg#icon-question"></use>
+              </svg>
+              <span
+              >За подробицями завітай у наш
+                <a href="" class="text-blue cursor-pointer">telegram</a></span
+              >
+            </div>
+            <div></div>
+          </article>
+        </li>
+        <li class="swiper-slide">
+          <article class="ml-2 border-green border-[1px] rounded-lg w-fit p-4">
+            <img class="mb-4" src="images/activities-mock.jpg" alt="mock" />
+            <h3 class="text-xl">Дискусійний клуб</h3>
+            <span class="inline-block bg-yellow text-white rounded-lg text-sm p-2 my-2 text-center">для жінок</span>
+            <span class="inline-block bg-yellow text-white rounded-lg text-sm p-2 my-2 text-center">дозвілля</span>
+            <p class="max-w-[360px] mb-6">
+              Тут ми обговорюємо поняття Мрий, Цілей, Відповідальності, Лідерства, Вибору та інші. Переглядаємо пізнавальні фільми на проекторі (з попкорном, звісно:) та надихаючі відео, записані видатними людьми спеціально для нас!
+            </p>
+            <div class="flex items-center gap-2">
+              <svg class="w-7 h-7">
+                <use href="images/sprite.svg#icon-question"></use>
+              </svg>
+              <span
+              >За подробицями завітай у наш
+                <a href="" class="text-blue cursor-pointer">telegram</a></span
+              >
+            </div>
+            <div></div>
+          </article>
+        </li>
+        <li class="swiper-slide">
+          <article class="ml-2 border-green border-[1px] rounded-lg w-fit p-4">
+            <img class="mb-4" src="images/activities-mock.jpg" alt="mock" />
+            <h3 class="text-xl">М/К “Мокре валяння”</h3>
+            <span class="inline-block bg-yellow text-white rounded-lg text-sm p-2 my-2 text-center">для жінок</span>
+            <span class="inline-block bg-yellow text-white rounded-lg text-sm p-2 my-2 text-center">містецтво</span>
+            <p class="max-w-[360px] mb-6">
+              Мокре валяння – це техніка, за допомогою якої ви зможете створювати різноманітні декоративні елементи, предмети одягу, різноманітні аксесуари. Для мокрого валяння використовують мильний розчин, який розкриває лусочки на волокнах вовни, а потім механічними рухами їм допомагають зчепитися один з одним. На майстер-класі ви навчитеся працювати з вовною, основами мокрого валяння, правильно підбирати фурнітуру. Своїми руками зробіть елемент декору або прикраси для вашого одягу.
+            </p>
+            <div class="flex items-center gap-2">
+              <svg class="w-7 h-7">
+                <use href="images/sprite.svg#icon-question"></use>
+              </svg>
+              <span
+              >За подробицями завітай у наш
+                <a href="" class="text-blue cursor-pointer">telegram</a></span
+              >
+            </div>
+            <div></div>
+          </article>
+        </li>
+      </ul>
       <div class="swiper-pagination"></div>
     </div>
     <div class="flex justify-between max-xxl:justify-end">
