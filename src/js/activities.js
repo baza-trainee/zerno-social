@@ -11,3 +11,17 @@ categoryItems.forEach(item => {
     }
   });
 });
+
+
+  const cardList = document.querySelector(".activities-cards");
+  const cards = cardList.querySelectorAll(".swiper-slide");
+
+  cards.forEach((card) => {
+    const contentParagraph = card.querySelector("p");
+    const maxCharacters = 135;
+
+    if (contentParagraph.textContent.length > maxCharacters) {
+      const shortContent = contentParagraph.textContent.substring(0, maxCharacters);
+      contentParagraph.textContent = shortContent.trim() + '...';
+    }
+  });
