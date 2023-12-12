@@ -2,6 +2,7 @@
   const refs = {
     readMore: document.querySelectorAll('[readMoreBtn]'),
     closeMore: document.querySelectorAll('[closeMoreBtn]'),
+    onButtonClick:document.querySelectorAll('[onButtonClick]'),
   };
 
   refs.readMore.forEach(button => {
@@ -14,22 +15,32 @@
 
   function showMore(event) {
     const articleId = event.currentTarget.getAttribute('readMoreBtn');
-    toggleCard(articleId, true);
+    toggleCard(articleId);
   }
 
   function hideMore(event) {
     const articleId = event.currentTarget.getAttribute('closeMoreBtn');
-    toggleCard(articleId, false);
+    toggleCard(articleId);
   }
 
-  function toggleCard(articleId, show) {
-    const selectedCard = document.querySelector(`[data-card="${articleId}"]`);
+  function toggleCard(articleId) {
+    const selectedCard = document.querySelector(`[data-card =${articleId}]`);
     const selectedCardMore = document.querySelector(
       `[data-more="${articleId}"]`
     );
+    selectedCard.classList.toggle('hidden');
+    selectedCardMore.classList.toggle('hidden');
 
-    selectedCard.classList.toggle('hidden', show);
-    selectedCardMore.classList.toggle('hidden', !show);
+    if (window.innerWidth >= 1024) {
+      const allCard = document.querySelectorAll(`[data-card]`);
+
+      allCard.forEach(card => {
+        console.log(card);
+        card.classList.toggle('hidden');
+      });
+      selectedCard.classList.toggle('hidden');
+    }
+    
   }
 })();
 
