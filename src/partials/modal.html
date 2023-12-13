@@ -1,0 +1,166 @@
+<div
+  data-donat-modal
+  class="fixed flex justify-center top-0 left-0 z-50 w-full h-[100vh] bg-black/40 hidden"
+>
+  <div
+    class="absolute flex flex-col gap-12 items-center top-[65px] lg:top-64 w-full lg:w-[744px] xxl:w-[800px] bg-white py-12 lg:py-16 xxl:py-20"
+  >
+    <h2
+      class="text-center w-[200px] lg:w-[470px] xl:w-[540px] xxl:w-[600px] xxl:text-[46px]"
+    >
+      Оберіть суму пожертви для ГО Зерно
+    </h2>
+    <form id="amountForm" class="flex flex-col items-center gap-8 lg:gap-y-4">
+      <div
+        class="flex gap-x-2 gap-y-4 lg:gap-x-8 justify-center w-52 lg:w-full flex-wrap w-[266px] sm:w-[330px]"
+      >
+        <div>
+          <input
+            class="appearance-none"
+            type="radio"
+            id="50"
+            value="50"
+            name="amount"
+          />
+          <label
+            class="inline-flex bg-grayLight justify-center items-center w-20 sm:w-24 lg:w-auto lg:px-4 h-8 border border-black rounded-lg border-solid"
+            for="50"
+            >50 UAH</label
+          >
+        </div>
+        <div>
+          <input
+            class="appearance-none"
+            type="radio"
+            id="100"
+            value="100"
+            name="amount"
+          />
+          <label
+            class="inline-flex bg-grayLight justify-center items-center w-20 sm:w-24 lg:w-auto lg:px-4 h-8 border border-black rounded-lg border-solid"
+            for="100"
+            >100 UAH</label
+          >
+        </div>
+        <div>
+          <input
+            class="appearance-none"
+            type="radio"
+            id="200"
+            value="200"
+            name="amount"
+          />
+          <label
+            class="inline-flex bg-grayLight justify-center items-center w-20 sm:w-24 lg:w-auto lg:px-4 h-8 border border-black rounded-lg border-solid"
+            for="200"
+            >200 UAH</label
+          >
+        </div>
+        <div>
+          <input
+            class="appearance-none"
+            type="radio"
+            id="500"
+            value="500"
+            name="amount"
+          />
+          <label
+            class="inline-flex bg-grayLight justify-center items-center w-20 sm:w-24 lg:w-auto lg:px-4 h-8 border border-black rounded-lg border-solid"
+            for="500"
+            >500 UAH</label
+          >
+        </div>
+        <div>
+          <input
+            class="appearance-none"
+            type="radio"
+            id="1000"
+            value="1000"
+            name="amount"
+          />
+          <label
+            class="inline-flex bg-grayLight justify-center items-center w-20 sm:w-24 lg:w-auto lg:px-4 h-8 border border-black rounded-lg border-solid"
+            for="1000"
+            >1000 UAH</label
+          >
+        </div>
+      </div>
+      <div class="flex justify-center gap-3 lg:gap-8 xxl:gap-11 lg:mt-[-22px]">
+        <div class="hidden md:block">
+          <input
+            class="appearance-none"
+            type="radio"
+            id="onece"
+            value="onece"
+            name="period"
+          />
+          <label
+            class="inline-flex bg-grayLight justify-center items-center w-36 lg:w-full px-8 xxl:px-12 h-9 border border-black rounded-lg border-solid"
+            for="onece"
+            >Одноразово</label
+          >
+        </div>
+        <div>
+          <input
+            class="appearance-none"
+            type="radio"
+            id="week"
+            value="week"
+            name="period"
+          />
+          <label
+            class="inline-flex bg-grayLight justify-center items-center w-36 lg:w-full px-8 xxl:px-12 h-9 border border-black rounded-lg border-solid"
+            for="week"
+            >Щотижня</label
+          >
+        </div>
+        <div>
+          <input
+            class="appearance-none"
+            type="radio"
+            id="month"
+            value="month"
+            name="period"
+          />
+          <label
+            class="inline-flex bg-grayLight justify-center items-center w-36 lg:w-full px-8 xxl:px-12 h-9 border border-black rounded-lg border-solid"
+            for="month"
+            >Щомісячно</label
+          >
+        </div>
+      </div>
+      <p class="font-semibold text-xl">або введіть суму</p>
+      <div class="w-full relative lg:w-96">
+        <input
+          class="appearance-none py-5 px-2 w-full bg-grayLight border border-black rounded-lg border-solid"
+          type="number"
+          value=""
+          min="1"
+          placeholder="введіть суму"
+        />
+        <span class="absolute right-2 top-[22px] bg-grayLight">UAH</span>
+      </div>
+      <!-- <button
+        class="bg-greenBTN text-white text-[22px] py-[14px] lg:py-[4px] xl:py-[9px] xxl:py-[14px] rounded-lg sm:px-[23px] text-[34px] lg:text-[22px] xl:text-2xl xxl:text-[34px] w-full sm:w-[400px] lg:w-[260px] xxl:w-[360px] xxxl:w-[410px] outline-none transition-all hover:outline-2 hover:outline-offset-4 hover:outline-greenBTN"
+        type="submit"
+      >
+        Підтримати проєкт
+      </button> -->
+      <a
+        href="https://send.monobank.ua/jar/6hjFL2zS5U"
+        target="_blank"
+        class="bg-greenBTN text-center text-white text-[22px] py-[14px] lg:mt-7 lg:py-[4px] xl:py-[9px] xxl:py-[14px] rounded-lg sm:px-[23px] text-[34px] lg:text-[22px] xl:text-2xl xxl:text-[34px] w-full sm:w-[400px] lg:w-96 outline-none transition-all hover:outline-2 hover:outline-offset-4 hover:outline-greenBTN"
+        >Підтримати проєкт</a
+      >
+    </form>
+    <button
+      donat-close-btn
+      class="absolute right-3 top-3 md:right-5 md:top-5"
+      type="button"
+    >
+      <svg class="w-6 h-6 xl:w-8 xl:h-8">
+        <use href="images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+</div>

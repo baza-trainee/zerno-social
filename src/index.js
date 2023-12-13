@@ -5,3 +5,4 @@ import './js/map';
 import './js/more';
 import './js/topBtn';
 import './js/switchLangBtn';
+import './js/modal';
