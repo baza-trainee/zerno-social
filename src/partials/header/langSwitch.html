@@ -1,9 +1,19 @@
-<button
-  not-switched-lang-btn
-  type="button"
-  aria-label="Switch language"
-  class="text-green text-3xl lg:text-xl absolute bottom-[-60px] lg:bottom-[-40px] left-[-20px] xl:left-0 p-5 lg:pt-0 transition-opacity hover:opacity-50 bg-white rounded-lg hidden"
->
-  <span switch-lang-ua class="hidden">UA</span>
-  <span switch-lang-en>EN</span>
-</button>
+<div class="language-dropdown relative flex items-center">
+  <button
+    type="button"
+    aria-label="Switch language"
+    class="text-green text-3xl lg:text-xl flex gap-2 items-center transition-opacity bg-white rounded-lg"
+  >
+    <span>UA</span>
+    <svg class="w-5 h-5">
+      <use href="images/sprite.svg#icon-arrowD"></use>
+    </svg>
+  </button>
+
+  <div
+    class="language-options lg:pt-0 xl:pt-4 absolute top-3/4 right-2 text-green text-3xl lg:text-xl p-5 transition-opacity bg-white rounded-lg hidden z-[51]"
+  >
+    <button id="uaBtn" class="hover:text-green">UA</button>
+    <button id="enBtn" class="hover:text-green">EN</button>
+  </div>
+</div>
