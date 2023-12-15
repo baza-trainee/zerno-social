@@ -1,6 +1,6 @@
 import languageTranslate from './languageTranslate';
 
-const arrayLanguage = ['UK', 'EN'];
+// const arrayLanguage = ['UK', 'EN'];
 
 let activeLanguage = localStorage.getItem('language') || 'UA';
 const languageOptions = document.querySelector('.language-options');
@@ -52,11 +52,11 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  function updateLanguageLink(languageCode) {
-    const currentHash = window.location.hash;
-    const newPath = `/${languageCode.toLowerCase()}${currentHash}`;
-    window.history.replaceState({}, document.title, newPath);
-  }
+  // function updateLanguageLink(languageCode) {
+  //   const currentHash = window.location.hash;
+  //   const newPath = `/${languageCode.toLowerCase()}${currentHash}`;
+  //   window.history.replaceState({}, document.title, newPath);
+  // }
 
   const newButton = document.getElementById(
     `${activeLanguage.toLowerCase()}Btn`
@@ -71,15 +71,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
   uaButton.addEventListener('click', function () {
     switchLanguage('UA');
-    updateLanguageLink('UA');
+    // updateLanguageLink('UA');
   });
 
   enButton.addEventListener('click', function () {
     switchLanguage('EN');
-    updateLanguageLink('EN');
+    // updateLanguageLink('EN');
   });
 
-  updateLanguageLink(activeLanguage);
+  // updateLanguageLink(activeLanguage);
 });
 
 const chengeLang = () => {
