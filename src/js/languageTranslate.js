@@ -1,5 +1,5 @@
 export default {
-  header_text_1: {
+  header_text_0: {
     ua: 'Підтримати проєкт',
     en: 'Support the project',
   },
@@ -229,7 +229,7 @@ export default {
   },
   activity_6: {
     ua: 'Дозвілля',
-    en: 'Leisure.',
+    en: 'Leisure',
   },
   activity_7: {
     ua: 'Екологія та довкілля',
