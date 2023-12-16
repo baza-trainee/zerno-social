@@ -1,7 +1,6 @@
 const activitiesBlock = document.querySelector('.activities');
 const categoriesContainer = document.querySelector('.categories');
 const categoryItems = categoriesContainer.querySelectorAll('.category');
-const cards = activitiesBlock.querySelectorAll(".swiper-slide");
 const filterButton = activitiesBlock.querySelector('.filter');
 const closeButton = activitiesBlock.querySelector('.close');
 
@@ -27,15 +26,6 @@ categoryItems.forEach(item => {
       activitiesSwiper.update();
     }
   });
-});
-cards.forEach((card) => {
-  const contentParagraph = card.querySelector("p");
-  const maxCharacters = 135;
-
-  if (contentParagraph.textContent.length > maxCharacters) {
-    const shortContent = contentParagraph.textContent.substring(0, maxCharacters);
-    contentParagraph.textContent = shortContent.trim() + '...';
-  }
 });
 
 filterButton.addEventListener('click', () => {
