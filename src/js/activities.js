@@ -28,7 +28,6 @@ categoryItems.forEach(item => {
     }
   });
 });
-
 cards.forEach((card) => {
   const contentParagraph = card.querySelector("p");
   const maxCharacters = 135;

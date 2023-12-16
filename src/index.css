@@ -28,8 +28,7 @@
   @apply opacity-0 -z-10;
 }
 
-.directionsSwiper .swiper-slide,
-.activitiesSwiper .swiper-slide {
+.directionsSwiper .swiper-slide {
   width: fit-content !important;
 }
 
@@ -106,6 +105,57 @@
     right: 0;
   }
 }
+
+@media screen and (max-width: 1280px) {
+  .activities .swiper-button-prev,
+  .activities .swiper-button-next {
+    bottom: 300px;
+  }
+
+  .activities .swiper-button-prev {
+    left: -10px;
+  }
+
+  .activities .swiper-button-next {
+    right: -10px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .activities .swiper-button-prev,
+  .activities .swiper-button-next {
+    bottom: 40px;
+  }
+
+  .activities .swiper-button-prev {
+    left: 40px;
+  }
+
+  .activities .swiper-button-next {
+    right: 40px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .activities .swiper-button-prev {
+    left: 100px;
+  }
+
+  .activities .swiper-button-next {
+    right: 100px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .activities .swiper-button-prev {
+    left: 0px;
+  }
+
+  .activities .swiper-button-next {
+    right: 0px;
+  }
+}
+
 .swiper-pagination-bullet {
   background-color: #727d57; /* Замените на ваш цвет */
 }
@@ -130,3 +180,4 @@
   transform: translateY(-50%);
   background-image: url(images/gallery_arrow_next.png);
 }
+
