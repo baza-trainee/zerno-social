@@ -57,8 +57,7 @@
       });
 
       var activitiesSwiper = new Swiper('.activitiesSwiper', {
-        slidesPerView: 4,
-        spaceBetween: 8,
+        spaceBetween: 16,
         pagination: {
           el: '.swiper-pagination',
           clickable: true,
@@ -67,13 +66,24 @@
           nextEl: '.custom-next-button',
           prevEl: '.custom-prev-button',
         },
-        responsive: {
-          1920: {
-            slidesPerView: 3,
+        breakpoints: {
+          320: {
+            spaceBetween: 0,
+          },
+          480: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 'auto',
+          },
+          1024: {
+            slidesPerView: 2,
           },
           1280: {
-            slidesPerView: 2,
-            spaceBetween: 16,
+            slidesPerView: 3,
+          },
+          1920: {
+            slidesPerView: 4,
           },
         },
       });
