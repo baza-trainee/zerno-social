@@ -1,100 +1,98 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zerno</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700;900&family=Manrope:wght@600;700&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-  />
-  <link rel="stylesheet" href="./index.css" />
-  <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
-  <link rel="icon" href="favicon.svg" type="image/x-icon" />
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-    crossorigin=""
-  />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-</head>
-<body>
-<include src="./partials/header/header.html"></include>
-<include src="./partials/hero.html"></include>
-<include src="./partials/directions.html"></include>
-<include src="./partials/activity.html"></include>
-<include src="./partials/missions.html"></include>
-<include src="./partials/team.html"></include>
-<include src="./partials/founder.html"></include>
-<include src="./partials/contribution/contribution.html"></include>
-<include src="./partials/partners.html"></include>
-<include src="./partials/subscription.html"></include>
-<include src="./partials/gallery.html"></include>
-<include src="./partials/social.html"></include>
-<include src="./partials/faq.html"></include>
-<include src="./partials/contacts.html"></include>
-<include src="./partials/footer.html"></include>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zerno</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700;900&family=Manrope:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <include src="./partials/header/header.html"></include>
+    <include src="./partials/hero.html"></include>
+    <include src="./partials/directions.html"></include>
+    <include src="./partials/activity.html"></include>
+    <include src="./partials/missions.html"></include>
+    <include src="./partials/team.html"></include>
+    <include src="./partials/founder.html"></include>
+    <include src="./partials/contribution/contribution.html"></include>
+    <include src="./partials/partners.html"></include>
+    <include src="./partials/subscription.html"></include>
+    <include src="./partials/gallery.html"></include>
+    <include src="./partials/social.html"></include>
+    <include src="./partials/faq.html"></include>
+    <include src="./partials/contacts.html"></include>
+    <include src="./partials/footer.html"></include>
 
-<include src="./partials/modal.html"></include>
+    <include src="./partials/modal.html"></include>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script type="module" src="./index.js"></script>
-<script>
-  var directionsSwiper = new Swiper('.directionsSwiper', {
-    slidesPerView: 'auto',
-    spaceBetween: 30,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-  });
-
-  var activitiesSwiper = new Swiper('.activitiesSwiper', {
-
-    spaceBetween: 16,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.custom-next-button',
-      prevEl: '.custom-prev-button',
-    },
-    breakpoints: {
-      320: {
-        spaceBetween: 0,
-      },
-      480: {
-        slidesPerView: 1,
-      },
-      768: {
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="./index.js"></script>
+    <script>
+      var directionsSwiper = new Swiper('.directionsSwiper', {
         slidesPerView: 'auto',
-      },
-      1024: {
-        slidesPerView: 2,
-      },
-      1280: {
-        slidesPerView: 3,
-      },
-      1920: {
-        slidesPerView: 4,
-      }
-    },
-  });
-</script>
-<script
-  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-  crossorigin=""
-></script>
-<script async src="https://www.tiktok.com/embed.js"></script>
-</body>
-</html>
+        spaceBetween: 30,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
 
+      var activitiesSwiper = new Swiper('.activitiesSwiper', {
+        spaceBetween: 16,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.custom-next-button',
+          prevEl: '.custom-prev-button',
+        },
+        breakpoints: {
+          320: {
+            spaceBetween: 0,
+          },
+          480: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 'auto',
+          },
+          1024: {
+            slidesPerView: 2,
+          },
+          1280: {
+            slidesPerView: 3,
+          },
+          1920: {
+            slidesPerView: 4,
+          },
+        },
+      });
+    </script>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script async src="https://www.tiktok.com/embed.js"></script>
+  </body>
+</html>

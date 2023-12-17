@@ -764,4 +764,20 @@ export default {
     ua: 'Підтримка громад',
     en: 'Supporting communities',
   },
+  map_1: {
+    ua: 'Село Збини 29.',
+    en: 'Zbyny village 29.',
+  },
+  map_2: {
+    ua: 'Мукачівський район.',
+    en: 'Mukachevo district.',
+  },
+  map_3: {
+    ua: 'Закарпатська обл.',
+    en: 'Zakarpattia obl.',
+  },
+  map_4: {
+    ua: 'Україна.',
+    en: 'Ukraine.',
+  },
 };
