@@ -78,13 +78,13 @@
 }
 
 .activitiesSwiper .swiper-pagination {
-  bottom: -48px;
+  bottom: -40px;
   position: relative;
 }
 
 .activities .swiper {
   overflow-y: visible;
-  height: 580px;
+  height: 590px;
 }
 
 .activities .swiper-wrapper {
@@ -98,7 +98,7 @@
   }
 
   .activities .swiper-button-prev {
-    left: -40px;
+    left: -30px;
   }
 
   .activities .swiper-button-next {
@@ -106,7 +106,7 @@
   }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1279px) {
   .activities .swiper-button-prev,
   .activities .swiper-button-next {
     bottom: 300px;
