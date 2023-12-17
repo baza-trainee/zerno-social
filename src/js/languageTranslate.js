@@ -642,27 +642,27 @@ export default {
   },
   missions_5: {
     ua: 'Цілі',
-    en: 'Objectives',
+    en: 'Goals',
   },
   missions_6: {
-    ua: 'Збереження традицій, виховання еко свідомої молоді, мотивація на навики щасливих та успішних людей, розвиток жіночого підприємництва та жіночого дозвілля на селі',
-    en: "Preservation of traditions, education of eco-conscious youth, motivation for skills happy and successful people, development of women's entrepreneurship and women's leisure in rural areas",
+    ua: 'Збереження традицій, виховання еко свідомої молоді, мотивація на навики щасливих та успішних людей, розвиток жіночого підприємництва та жіночого дозвілля на селі.',
+    en: "Preservation of traditions, education of eco-conscious youth, motivation for skills happy and successful people, development of women's entrepreneurship and women's leisure in rural areas.",
   },
   missions_7: {
     ua: 'Задачі',
     en: 'Objectives',
   },
   missions_8: {
-    ua: 'Організувати постійно діючі творчі та спортивні гуртки для сільської молоді',
-    en: 'Organize permanent creative and sports clubs for rural youth. youth',
+    ua: 'Організувати постійно діючі творчі та спортивні гуртки для сільської молоді.',
+    en: 'Organize permanent creative and sports clubs for rural youth.',
   },
   missions_9: {
-    ua: 'Cтворити безпечний, творчий, розвиваючий простір для сільських жінок',
-    en: 'To create a safe, creative, and developing space for rural women',
+    ua: 'Cтворити безпечний, творчий, розвиваючий простір для сільських жінок.',
+    en: 'To create a safe, creative, and developing space for rural women.',
   },
   missions_10: {
-    ua: 'Oрганізувати рекреаційні табори для дітей, що постраждали від війни',
-    en: 'Organize recreational camps for children affected by the war',
+    ua: 'Oрганізувати рекреаційні табори для дітей, що постраждали від війни.',
+    en: 'Organize recreational camps for children affected by the war.',
   },
   modal_1: {
     ua: 'Оберіть суму пожертви для ГО Зерно',
