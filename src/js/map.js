@@ -25,5 +25,12 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 var marker = L.marker([48.7902308, 22.9469080]).addTo(map)
-    .bindPopup('<b>Село Збини 29</b><br>Мукачівський район<br>Закарпатська область<br>Україна.')
+    .bindPopup(
+        `<div>
+            <span data-lang="map_1">Село Збини 29.</span><br>
+            <span data-lang="map_2">Мукачівський район.</span><br>
+            <span data-lang="map_3">Закарпатська обл.</span><br>
+            <span data-lang="map_4"> Україна.</span>
+        </div>`
+        )
     .openPopup();
