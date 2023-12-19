@@ -52,8 +52,8 @@ export default {
     en: 'Volunteers',
   },
   contribution_3: {
-    ua: 'Якщо Ви відчуваєте потребу поділитися своїми знаннями, навичками і талантами - запрошуємо до команди! Разом ми зробимо більше',
-    en: 'If you feel the need to share your knowledge, skills and talents, we invite you to join our team! Together we will do more',
+    ua: 'Якщо Ви відчуваєте потребу поділитися своїми знаннями, навичками і талантами - запрошуємо до команди! Разом ми зробимо більше.',
+    en: 'If you feel the need to share your knowledge, skills and talents, we invite you to join our team! Together we will do more.',
   },
   contribution_4: {
     ua: 'Дізнатись більше',
@@ -76,8 +76,8 @@ export default {
     en: 'Partners',
   },
   contribution_9: {
-    ua: 'Станьте партнерами ГО ЗЕРНО і долучіться до розвитку щасливих сільських громад! Ви можете долучитися своїм досвідом,товаром, якій виробляєте, або ж матеріальною підтримкою актуальних проєктів! Станьте партнерами ГО ЗЕРНО і долучіться до розвитку',
-    en: 'Become a partner of ZERNO and contribute to the development of happy rural communities! You can contribute with your experience, products, or material support for current projects! Become a partner of the NGO ZERNO and join the development',
+    ua: 'Станьте партнерами ГО ЗЕРНО і долучіться до розвитку щасливих сільських громад! Ви можете долучитися своїм досвідом,товаром, якій виробляєте, або ж матеріальною підтримкою актуальних проєктів! Станьте партнерами ГО ЗЕРНО і долучіться до розвитку.',
+    en: 'Become a partner of ZERNO and contribute to the development of happy rural communities! You can contribute with your experience, products, or material support for current projects! Become a partner of the NGO ZERNO and join the development.',
   },
   contribution_10: {
     ua: 'Дізнатись більше',
