@@ -20,8 +20,12 @@ categoryItems.forEach(item => {
         const categoryTags = Array.from(
           card.querySelectorAll('.inline-block')
         ).map(tag => tag.innerText.toLowerCase().trim());
-        const isVisible =
-          categoryTags.includes(selectedCategory) || selectedCategory === 'усі';
+        let isVisible;
+        if (localStorage.language === 'EN') {
+          isVisible = categoryTags.includes(selectedCategory) || selectedCategory === 'all';
+        } else if (localStorage.language === 'UA') {
+          isVisible = categoryTags.includes(selectedCategory) || selectedCategory === 'усі';
+        }
 
         card.style.display = isVisible ? 'block' : 'none';
         categoriesContainer.classList.add('max-lg:hidden');
