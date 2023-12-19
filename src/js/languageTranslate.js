@@ -52,8 +52,8 @@ export default {
     en: 'Volunteers',
   },
   contribution_3: {
-    ua: 'Якщо Ви відчуваєте потребу поділитися своїми знаннями, навичками італантами - запрошуємо до команди! Разом ми зробимо більше',
-    en: 'If you feel the need to share your knowledge, skills and talents, we invite you to join our team! Together we will do more',
+    ua: 'Якщо Ви відчуваєте потребу поділитися своїми знаннями, навичками і талантами - запрошуємо до команди! Разом ми зробимо більше.',
+    en: 'If you feel the need to share your knowledge, skills and talents, we invite you to join our team! Together we will do more.',
   },
   contribution_4: {
     ua: 'Дізнатись більше',
@@ -64,7 +64,7 @@ export default {
     en: 'Mentors',
   },
   contribution_6: {
-    ua: 'Ви можете записати надихайюче відео для сільських дітей абоприїхати і зустрітися з людьми, які будуть вдячні почути Вас і надихнутися Вашим досвідом та досягненнями!',
+    ua: 'Ви можете записати надихайюче відео для сільських дітей або приїхати і зустрітися з людьми, які будуть вдячні почути Вас і надихнутися Вашим досвідом та досягненнями!',
     en: 'You can record an inspirational video for rural children or come and meet people who will be grateful to hear from you and inspired by your experience and achievements!',
   },
   contribution_7: {
@@ -76,8 +76,8 @@ export default {
     en: 'Partners',
   },
   contribution_9: {
-    ua: 'Станьте партнерами ГО ЗЕРНО і долучіться до розвитку щасливих сільських громад! Ви можете долучитися своїм досвідом,товаром, якій виробляєте, або ж матеріальною підтримкою актуальних проєктів! Станьте партнерами ГО ЗЕРНО і долучіться до розвитку',
-    en: 'Become a partner of ZERNO and contribute to the development of happy rural communities! You can contribute with your experience, products, or material support for current projects! Become a partner of the NGO ZERNO and join the development',
+    ua: 'Станьте партнерами ГО ЗЕРНО і долучіться до розвитку щасливих сільських громад! Ви можете долучитися своїм досвідом,товаром, якій виробляєте, або ж матеріальною підтримкою актуальних проєктів! Станьте партнерами ГО ЗЕРНО і долучіться до розвитку.',
+    en: 'Become a partner of ZERNO and contribute to the development of happy rural communities! You can contribute with your experience, products, or material support for current projects! Become a partner of the NGO ZERNO and join the development.',
   },
   contribution_10: {
     ua: 'Дізнатись більше',
@@ -645,7 +645,7 @@ export default {
     en: 'Goals',
   },
   missions_6: {
-    ua: 'Збереження традицій, виховання Еко свідомої молоді, мотивація на навикчи щасливих та успішних людей, розвиток жіночого підприємництва та жіночого дозвілля на селі.',
+    ua: 'Збереження традицій, виховання Еко свідомої молоді, мотивація на навички щасливих та успішних людей, розвиток жіночого підприємництва та жіночого дозвілля на селі.',
     en: "Preservation of traditions, education of eco-conscious youth, motivation for skills happy and successful people, development of women's entrepreneurship and women's leisure in rural areas.",
   },
   missions_7: {
