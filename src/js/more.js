@@ -2,7 +2,7 @@
   const refs = {
     readMore: document.querySelectorAll('[readMoreBtn]'),
     closeMore: document.querySelectorAll('[closeMoreBtn]'),
-    onButtonClick:document.querySelectorAll('[onButtonClick]'),
+    onButtonClick: document.querySelectorAll('[onButtonClick]'),
   };
 
   refs.readMore.forEach(button => {
@@ -35,12 +35,10 @@
       const allCard = document.querySelectorAll(`[data-card]`);
 
       allCard.forEach(card => {
-        console.log(card);
         card.classList.toggle('hidden');
       });
       selectedCard.classList.toggle('hidden');
     }
-    
   }
 })();
 

@@ -76,7 +76,7 @@ export default {
     en: 'Partners',
   },
   contribution_9: {
-    ua: 'Станьте партнерами ГО ЗЕРНО і долучіться до розвитку щасливих сільських громад! Ви можете долучитися своїм досвідом,товаром, якій виробляєте, або ж матеріальною підтримкою актуальних проєктів! Станьте партнерами ГО ЗЕРНО і долучіться до розвитку.',
+    ua: 'Станьте партнерами ГО ЗЕРНО і долучіться до розвитку щасливих сільських громад! Ви можете долучитися своїм досвідом,товаром, якій виробляєте, або ж матеріальною підтримкою актуальних проєктів!',
     en: 'Become a partner of ZERNO and contribute to the development of happy rural communities! You can contribute with your experience, products, or material support for current projects! Become a partner of the NGO ZERNO and join the development.',
   },
   contribution_10: {
