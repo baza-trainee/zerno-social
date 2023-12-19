@@ -233,7 +233,7 @@ export default {
   },
   activity_7: {
     ua: 'Екологія та довкілля',
-    en: 'Ecology and the environment',
+    en: 'Ecology and environment',
   },
   activity_8: {
     ua: 'для жінок',
