@@ -629,7 +629,7 @@ export default {
     en: 'Mission',
   },
   missions_2: {
-    ua: 'Наша місія -працювати задля підвищення рівня щастя в сільських громадах.',
+    ua: 'Наша місія - працювати задля підвищення рівня щастя в сільських громадах.',
     en: 'Our mission is to work to increase the level of happiness in rural communities.',
   },
   missions_3: {
@@ -645,7 +645,7 @@ export default {
     en: 'Goals',
   },
   missions_6: {
-    ua: 'Збереження традицій, виховання еко свідомої молоді, мотивація на навики щасливих та успішних людей, розвиток жіночого підприємництва та жіночого дозвілля на селі.',
+    ua: 'Збереження традицій, виховання Еко свідомої молоді, мотивація на навикчи щасливих та успішних людей, розвиток жіночого підприємництва та жіночого дозвілля на селі.',
     en: "Preservation of traditions, education of eco-conscious youth, motivation for skills happy and successful people, development of women's entrepreneurship and women's leisure in rural areas.",
   },
   missions_7: {
