@@ -224,7 +224,7 @@ export default {
     en: 'For women',
   },
   activity_5: {
-    ua: 'Містецтво',
+    ua: 'Мистецтво',
     en: 'Art',
   },
   activity_6: {
@@ -360,7 +360,7 @@ export default {
     en: 'for women',
   },
   activity_39: {
-    ua: 'містецтво',
+    ua: 'мистецтво',
     en: 'art',
   },
   activity_40: {
@@ -424,7 +424,7 @@ export default {
     en: 'for women',
   },
   activity_55: {
-    ua: 'містецтво',
+    ua: 'мистецтво',
     en: 'art',
   },
   activity_56: {
