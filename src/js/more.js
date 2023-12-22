@@ -13,21 +13,14 @@
     button.addEventListener('click', hideMore);
   });
 
-  // refs.onTittleClick.forEach(h3 => {
-  //   h3.addEventListener('click', onClickTittle);
-  // }
-  // );
-
   function handleStyles(allTittleCard, articleId, isActive) {
     allTittleCard.forEach(title => {
       const isCurrent = title.getAttribute('readMore') === articleId;
       title.style.backgroundColor = '#727D57';
       title.style.color = 'white';
-      title.style.border = '#727D57';
       if (window.innerWidth >= 1024 && !isCurrent) {
         title.style.backgroundColor = isActive ? 'white' : '#727D57';
         title.style.color = isActive ? '#727D57' : 'white';
-        title.style.border = isActive ? '3px solid #727D57' : '#727D57';
       }
     });
   }
@@ -47,14 +40,6 @@
     handleStyles(allTittleCard, articleId, false);
     toggleCard(articleId);
   }
-
-  // function onClickTittle(event) {
-  //   const articleId = event.currentTarget.getAttribute('readMore');
-  //   const allTittleCard = document.querySelectorAll('[onTittleClick]');
-
-  //   handleStyles(allTittleCard, articleId, true);
-  //   toggleCard(articleId);
-  // }
 
   function toggleCard(articleId) {
     const selectedCard = document.querySelector(`[data-card =${articleId}]`);
