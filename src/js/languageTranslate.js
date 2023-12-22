@@ -692,10 +692,10 @@ export default {
     ua: 'Наші партнери',
     en: 'Our partners',
   },
-  social_1: {
-    ua: 'Як це виглядає',
-    en: 'What it looks like',
-  },
+  // social_1: {
+  //   ua: 'Як це виглядає',
+  //   en: 'What it looks like',
+  // },
   subscription_1: {
     ua: 'Бажаєш приєднатись до команди ?',
     en: 'Want to join the team ?',
