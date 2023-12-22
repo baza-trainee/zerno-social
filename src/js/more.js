@@ -13,9 +13,10 @@
     button.addEventListener('click', hideMore);
   });
 
-  refs.onTittleClick.forEach(h3 => {
-    h3.addEventListener('click', onClickTittle);
-  });
+  // refs.onTittleClick.forEach(h3 => {
+  //   h3.addEventListener('click', onClickTittle);
+  // }
+  // );
 
   function handleStyles(allTittleCard, articleId, isActive) {
     allTittleCard.forEach(title => {
@@ -47,13 +48,13 @@
     toggleCard(articleId);
   }
 
-  function onClickTittle(event) {
-    const articleId = event.currentTarget.getAttribute('readMore');
-    const allTittleCard = document.querySelectorAll('[onTittleClick]');
+  // function onClickTittle(event) {
+  //   const articleId = event.currentTarget.getAttribute('readMore');
+  //   const allTittleCard = document.querySelectorAll('[onTittleClick]');
 
-    handleStyles(allTittleCard, articleId, true);
-    toggleCard(articleId);
-  }
+  //   handleStyles(allTittleCard, articleId, true);
+  //   toggleCard(articleId);
+  // }
 
   function toggleCard(articleId) {
     const selectedCard = document.querySelector(`[data-card =${articleId}]`);
