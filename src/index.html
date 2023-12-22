@@ -46,48 +46,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="./index.js"></script>
-    <script>
-      var directionsSwiper = new Swiper('.directionsSwiper', {
-        slidesPerView: 'auto',
-        spaceBetween: 30,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-      });
-
-      var activitiesSwiper = new Swiper('.activitiesSwiper', {
-        spaceBetween: 16,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-        navigation: {
-          nextEl: '.custom-next-button',
-          prevEl: '.custom-prev-button',
-        },
-        breakpoints: {
-          320: {
-            spaceBetween: 0,
-          },
-          480: {
-            slidesPerView: 1,
-          },
-          768: {
-            slidesPerView: 'auto',
-          },
-          1024: {
-            slidesPerView: 2,
-          },
-          1280: {
-            slidesPerView: 3,
-          },
-          1920: {
-            slidesPerView: 4,
-          },
-        },
-      });
-    </script>
     <script
       src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
       integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="

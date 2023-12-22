@@ -5,6 +5,47 @@ const cards = activitiesBlock.querySelectorAll('.swiper-slide');
 const filterButton = activitiesBlock.querySelector('.filter');
 const closeButton = activitiesBlock.querySelector('.close');
 
+var directionsSwiper = new Swiper('.directionsSwiper', {
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
+
+var activitiesSwiper = new Swiper('.activitiesSwiper', {
+  spaceBetween: 16,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.custom-next-button',
+    prevEl: '.custom-prev-button',
+  },
+  breakpoints: {
+    320: {
+      spaceBetween: 0,
+    },
+    480: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 'auto',
+    },
+    1024: {
+      slidesPerView: 2,
+    },
+    1280: {
+      slidesPerView: 3,
+    },
+    1920: {
+      slidesPerView: 4,
+    },
+  },
+});
+
 categoryItems.forEach(item => {
   let selectedCategory = '';
 
@@ -22,9 +63,13 @@ categoryItems.forEach(item => {
         ).map(tag => tag.innerText.toLowerCase().trim());
         let isVisible;
         if (localStorage.language === 'EN') {
-          isVisible = categoryTags.includes(selectedCategory) || selectedCategory === 'all';
+          isVisible =
+            categoryTags.includes(selectedCategory) ||
+            selectedCategory === 'all';
         } else if (localStorage.language === 'UA') {
-          isVisible = categoryTags.includes(selectedCategory) || selectedCategory === 'усі';
+          isVisible =
+            categoryTags.includes(selectedCategory) ||
+            selectedCategory === 'усі';
         }
 
         card.style.display = isVisible ? 'block' : 'none';
