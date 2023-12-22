@@ -1,6 +1,7 @@
 import './js/languageTranslate';
 import './js/menu';
 import './js/faq';
+import './js/directions';
 import './js/activities';
 import './js/map';
 import './js/more';

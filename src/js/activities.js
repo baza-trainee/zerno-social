@@ -5,15 +5,6 @@ const cards = activitiesBlock.querySelectorAll('.swiper-slide');
 const filterButton = activitiesBlock.querySelector('.filter');
 const closeButton = activitiesBlock.querySelector('.close');
 
-var directionsSwiper = new Swiper('.directionsSwiper', {
-  slidesPerView: 'auto',
-  spaceBetween: 30,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-});
-
 var activitiesSwiper = new Swiper('.activitiesSwiper', {
   spaceBetween: 16,
   pagination: {
