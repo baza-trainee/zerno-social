@@ -1,13 +1,22 @@
 import languageTranslate from './languageTranslate';
 
 let activeLanguage = localStorage.getItem('language') || 'UA';
+
 const languageOptions = document.querySelector('.language-options');
+const listBtnOperatuons = document.querySelectorAll('.language-options button');
 const switchButton = document.querySelector('.language-dropdown button ');
+const switchButtonSpan = document.querySelector(
+  '.language-dropdown  button  span '
+);
 
 function toggleLanguageOptions() {
   languageOptions.classList.toggle('hidden');
-  switchButton.disabled = true;
-  switchButton.style.opacity = '0.5';
+
+  if (languageOptions.classList.contains('hidden')) {
+    switchButton.style.opacity = '1';
+  } else {
+    switchButton.style.opacity = '0.5';
+  }
 }
 
 function switchLanguage(lang) {
@@ -19,16 +28,12 @@ function switchLanguage(lang) {
   activeButton.classList.remove('hidden');
   newButton.classList.add('hidden');
 
-  const switchButtonSpan = document.querySelector(
-    '.language-dropdown  button  span '
-  );
   switchButtonSpan.innerHTML = `${lang}`;
 
   localStorage.setItem('language', lang);
 
   toggleLanguageOptions();
   activeLanguage = lang;
-  switchButton.disabled = false;
   switchButton.style.opacity = '1';
   chengeLang();
 }
@@ -36,10 +41,6 @@ function switchLanguage(lang) {
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelector('.language-dropdown  button  span ').innerHTML =
     activeLanguage;
-
-  const listBtnOperatuons = document.querySelectorAll(
-    '.language-options button'
-  );
 
   listBtnOperatuons.forEach(btn => {
     if (btn.classList.contains('hidden')) {

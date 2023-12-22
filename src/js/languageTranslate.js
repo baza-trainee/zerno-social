@@ -224,7 +224,7 @@ export default {
     en: 'For women',
   },
   activity_5: {
-    ua: 'Містецтво',
+    ua: 'Мистецтво',
     en: 'Art',
   },
   activity_6: {
@@ -360,7 +360,7 @@ export default {
     en: 'for women',
   },
   activity_39: {
-    ua: 'містецтво',
+    ua: 'мистецтво',
     en: 'art',
   },
   activity_40: {
@@ -424,7 +424,7 @@ export default {
     en: 'for women',
   },
   activity_55: {
-    ua: 'містецтво',
+    ua: 'мистецтво',
     en: 'art',
   },
   activity_56: {
@@ -459,15 +459,15 @@ export default {
     ua: 'Кому підходять заходи ?',
     en: 'For whom are the events suitable?',
   },
-  //!   потрібен переклад faq_2
+  //!  тимчасовий текст
   faq_2: {
-    ua: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    en: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    ua: 'ЗЕРНО - місце для кожного, хто бажає зробити світ кращим через творчість.',
+    en: 'Join our charity events and do good by expressing yourself creatively.',
   },
-  //!   потрібен переклад faq_3
+  //!  тимчасовий текст
   faq_3: {
-    ua: 'It is , sed do eiusmod tempor incididunt ut labore et dolore magna  aliqua. Ut enim ad minim veniam, ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in  voluptate velit esse cillum dolore eu fugiat nulla pariatur.  ',
-    en: 'It is , sed do eiusmod tempor incididunt ut labore et dolore magna  aliqua. Ut enim ad minim veniam, ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in  voluptate velit esse cillum dolore eu fugiat nulla pariatur. ',
+    ua: 'ЗЕРНО - місце для кожного, хто бажає зробити світ кращим через творчість.',
+    en: 'Join our charity events and do good by expressing yourself creatively.',
   },
   faq_4: {
     ua: 'Як можна забронювати місце на захід ?',
@@ -481,29 +481,29 @@ export default {
     ua: 'Ваші заходи платні ?',
     en: 'Are your events paid ?',
   },
-  //!  потрібен переклад faq_7
+  //!  тимчасовий текст
   faq_7: {
-    ua: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    en: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    ua: 'Всі наші заходи абсолютно безкоштовні, завдяки неоціненному внеску волонтерів та наполегливій роботі команди ЗЕРНО.',
+    en: 'All our events are completely free of charge, thanks to the invaluable contribution of volunteers and the hard work of the ZERNO team.',
   },
-  //!   потрібен переклад faq_8
+  //!  тимчасовий текст
   faq_8: {
-    ua: 'It is , sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    en: 'It is , sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    ua: 'Разом ми творимо позитивні зміни, роблячи це доступним для кожного!',
+    en: 'Together we create positive change by making it accessible to everyone!',
   },
   faq_9: {
     ua: 'Чи є фудкорт ?',
     en: 'Is there a food court?',
   },
-  //!   потрібен переклад faq_10
+  //!   тимчасовий текст
   faq_10: {
-    ua: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    en: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    ua: 'Звісно!',
+    en: 'Answer.',
   },
-  //!   потрібен переклад faq_11
+  //!   тимчасовий текст
   faq_11: {
-    ua: 'It is , sed do eiusmod tempor incididunt ut labore et dolore  magna aliqua. Ut enim ad minim veniam, ullamco laboris nisi ut  aliquip ex ea commodo consequat. ',
-    en: 'It is , sed do eiusmod tempor incididunt ut labore et dolore  magna aliqua. Ut enim ad minim veniam, ullamco laboris nisi ut  aliquip ex ea commodo consequat. ',
+    ua: 'Організація ЗЕРНО робить все можливе, щоб надати неперевершені заходи з атмосферою та кулінарними насолодами. Наший фудкорт - це місце, де ви зможете насолоджуватися унікальними стравами від талановитих кухарів. І найкраще в цьому - все абсолютно безкоштовно, завдяки великодушності та підтримці наших небайдужих партнерів та команди ЗЕРНО!',
+    en: 'The ZERNO organization does its best to provide unrivaled events with atmosphere and culinary delights. Our food court is a place where you can enjoy unique dishes from talented chefs. And the best part is that everything is absolutely free, thanks to the generosity and support of our caring partners and the ZERNO team!',
   },
   faq_12: {
     ua: 'Якщо не знайшли відповідь на запитання ?',
@@ -521,15 +521,15 @@ export default {
     ua: 'Яка мета існування організації “Зерно”?',
     en: 'What is the purpose of the Zerno organization?',
   },
-  //!   потрібен переклад faq_16
+  //!   тимчасовий текст
   faq_16: {
-    ua: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    en: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    ua: 'Організація "Зерно" існує з метою створення позитивних змін у суспільстві через впровадження волонтерської та благодійної діяльності.',
+    en: 'The Zerno organization exists to create positive changes in society through the implementation of volunteer and charitable activities.',
   },
-  //!   потрібен переклад faq_17
+  //!   тимчасовий текст
   faq_17: {
-    ua: 'It is , sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, ullamco laboris nisi utaliquip ex ea commodo consequat.',
-    en: 'It is , sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, ullamco laboris nisi utaliquip ex ea commodo consequat.',
+    ua: "Наша мета - надихати, підтримувати та об'єднувати людей для спільної творчості та розвитку громадськості. Ми віримо, що кожна дія може стати зерном добра, яке проросте у силу позитивних змін у нашому світі.",
+    en: 'Our goal is to inspire, support and unite people for joint creativity and community development. We believe that every action can become a seed of goodness that will germinate into positive changes in our world.',
   },
   footer_1: {
     ua: 'Про нас',
@@ -599,10 +599,10 @@ export default {
     ua: 'Пані Христина - засновниця організації',
     en: 'Ms. Khrystyna is the founder of the organization',
   },
-  //!   потрібен переклад founder_2
+  //!   тимчасовий текст
   founder_2: {
-    ua: 'It is , sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, ullamco laboris nisi utaliquip ex ea commodo consequat.',
-    en: 'It is , sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, ullamco laboris nisi utaliquip ex ea commodo consequat.',
+    ua: 'Пані Христина, засновниця "Зерно", - віддана та творча особистість, яка з любов\'ю вкладає свою енергію у волонтерську діяльність. Її візія та наполегливість роблять наш світ кращим, а кожен крок - сходженням до позитивних змін.',
+    en: 'Ms. Khrystyna, the founder of Zerno, is a dedicated and creative person who lovingly puts her energy into volunteer work. Her vision and perseverance make our world a better place, and every step she takes is a stairway to positive change.',
   },
   gallery_1: {
     ua: 'Галерея',

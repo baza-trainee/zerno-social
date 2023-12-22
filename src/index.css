@@ -181,3 +181,7 @@
   background-image: url(images/gallery_arrow_next.png);
 }
 
+.team-swiper-container .swiper-pagination-team {
+  bottom: 0;
+  position: relative;
+}
