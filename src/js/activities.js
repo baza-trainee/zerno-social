@@ -54,25 +54,23 @@ categoryItems.forEach(item => {
         ).map(tag => tag.innerText.toLowerCase().trim());
         let isVisible = false;
 
-        if (localStorage.language) {
-          if (localStorage.language === 'EN') {
-            isVisible =
-              categoryTags.includes(selectedCategory) ||
-              selectedCategory === 'all';
-          } else if (localStorage.language === 'UA') {
-            isVisible =
-              categoryTags.includes(selectedCategory) ||
-              selectedCategory === 'усі';
-          }
-        } else {
-          // Fallback if localStorage.language is not set
-          isVisible = categoryTags.includes(selectedCategory);
+        const currentLanguage = localStorage.language || 'UA';
+
+        if (currentLanguage === 'EN') {
+          isVisible =
+            categoryTags.includes(selectedCategory) ||
+            selectedCategory === 'all';
+        } else if (currentLanguage === 'UA') {
+          isVisible =
+            categoryTags.includes(selectedCategory) ||
+            selectedCategory === 'усі';
         }
 
         card.style.display = isVisible ? 'block' : 'none';
-        categoriesContainer.classList.add('max-lg:hidden');
       });
+
       activitiesSwiper.update();
+      categoriesContainer.classList.add('max-lg:hidden');
     }
   });
 });
