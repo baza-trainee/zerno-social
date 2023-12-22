@@ -138,6 +138,9 @@
         <input
           class="appearance-none py-5 px-2 w-full bg-grayLight border border-black rounded-lg border-solid transition-colors hover:border-yellow focus-visible:outline-yellow"
           type="number"
+          pattern="[0-9]*"
+          inputmode="numeric"
+          oninput="this.value = this.value.replace(/[^0-9]/g, '');"
           value=""
           min="1"
           placeholder="введіть суму"
