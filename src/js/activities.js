@@ -52,15 +52,21 @@ categoryItems.forEach(item => {
         const categoryTags = Array.from(
           card.querySelectorAll('.inline-block')
         ).map(tag => tag.innerText.toLowerCase().trim());
-        let isVisible;
-        if (localStorage.language === 'EN') {
-          isVisible =
-            categoryTags.includes(selectedCategory) ||
-            selectedCategory === 'all';
-        } else if (localStorage.language === 'UA') {
-          isVisible =
-            categoryTags.includes(selectedCategory) ||
-            selectedCategory === 'усі';
+        let isVisible = false;
+
+        if (localStorage.language) {
+          if (localStorage.language === 'EN') {
+            isVisible =
+              categoryTags.includes(selectedCategory) ||
+              selectedCategory === 'all';
+          } else if (localStorage.language === 'UA') {
+            isVisible =
+              categoryTags.includes(selectedCategory) ||
+              selectedCategory === 'усі';
+          }
+        } else {
+          // Fallback if localStorage.language is not set
+          isVisible = categoryTags.includes(selectedCategory);
         }
 
         card.style.display = isVisible ? 'block' : 'none';
