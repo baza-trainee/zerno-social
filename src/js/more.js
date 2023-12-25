@@ -13,6 +13,10 @@
     button.addEventListener('click', hideMore);
   });
 
+  refs.onTittleClick.forEach(h3 => {
+    h3.addEventListener('click', onClickTittle);
+  });
+
   function handleStyles(allTittleCard, articleId, isActive) {
     allTittleCard.forEach(title => {
       const isCurrent = title.getAttribute('readMore') === articleId;
@@ -23,6 +27,28 @@
         title.style.color = isActive ? '#727D57' : 'white';
       }
     });
+  }
+
+  function onClickTittle(event) {
+    const articleId = event.currentTarget.getAttribute('readMore');
+    const allTittleCard = document.querySelectorAll('[onTittleClick]');
+
+    handleStyles(allTittleCard, articleId, true);
+
+    if (window.innerWidth >= 1024) {
+      const allCard = document.querySelectorAll(`[data-card]`);
+      const allCardMore = document.querySelectorAll(`[data-more]`);
+
+      allCardMore.forEach(card => card.classList.add('hidden'));
+
+      allCard.forEach(card => {
+        const selectedCardMore = document.querySelector(
+          `[data-more="${articleId}"]`
+        );
+        card.classList.add('hidden');
+        selectedCardMore.classList.toggle('hidden');
+      });
+    }
   }
 
   function showMore(event) {
