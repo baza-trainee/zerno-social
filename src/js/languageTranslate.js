@@ -64,7 +64,7 @@ export default {
     en: 'Mentors',
   },
   contribution_6: {
-    ua: 'Ви можете записати надихайюче відео для сільських дітей або приїхати і зустрітися з людьми, які будуть вдячні почути Вас і надихнутися Вашим досвідом та досягненнями!',
+    ua: 'Ви можете записати надихаюче відео для сільських дітей або приїхати і зустрітися з людьми, які будуть вдячні почути Вас і надихнутися Вашим досвідом та досягненнями!',
     en: 'You can record an inspirational video for rural children or come and meet people who will be grateful to hear from you and inspired by your experience and achievements!',
   },
   contribution_7: {
@@ -196,7 +196,7 @@ export default {
     en: 'Volunteer',
   },
   volonteer_9: {
-    ua: '- це добровільна участь у роботі або прєкті на безоплатній основі з метою допомогти та підтримки спільноти та її ідеї. Якщо ви хочете стати волонтером та у вас є ідеї для співпраці, то негайно заповнюйте форму для співпраці, а наш менеджер протягом дня вам зателефонує. Ми цінуємо ваше бажання долучитися до нашого проєкту та раді вислухати будь-які пропозиції.',
+    ua: '- це добровільна участь у роботі або прoєкті на безоплатній основі з метою допомогти та підтримки спільноти та її ідеї. Якщо ви хочете стати волонтером та у вас є ідеї для співпраці, то негайно заповнюйте форму для співпраці, а наш менеджер протягом дня вам зателефонує. Ми цінуємо ваше бажання долучитися до нашого проєкту та раді вислухати будь-які пропозиції.',
     en: '- is voluntary participation in a work or project on a pro bono basis to help and support the community and its ideas. If you want to become a a volunteer and you have ideas for cooperation, then immediately fill out the for cooperation, and our manager will contact you within a day. We appreciate your desire to join our project and are happy to listen to any suggestions.',
   },
   volonteer_10: {
