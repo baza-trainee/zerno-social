@@ -4,6 +4,9 @@ const categoryItems = categoriesContainer.querySelectorAll('.category');
 const cards = activitiesBlock.querySelectorAll('.swiper-slide');
 const filterButton = activitiesBlock.querySelector('.filter');
 const closeButton = activitiesBlock.querySelector('.close');
+const activitiesTitles = activitiesBlock.querySelectorAll('h3');
+
+const currentLanguage = localStorage.language || 'UA';
 
 var activitiesSwiper = new Swiper('.activitiesSwiper', {
   spaceBetween: 16,
@@ -54,8 +57,6 @@ categoryItems.forEach(item => {
         ).map(tag => tag.innerText.toLowerCase().trim());
         let isVisible = false;
 
-        const currentLanguage = localStorage.language || 'UA';
-
         if (currentLanguage === 'EN') {
           isVisible =
             categoryTags.includes(selectedCategory) ||
@@ -82,3 +83,13 @@ filterButton.addEventListener('click', () => {
 closeButton.addEventListener('click', () => {
   categoriesContainer.classList.add('max-lg:hidden');
 });
+
+if (currentLanguage === 'EN') {
+  activitiesTitles.forEach(title => {
+    title.classList.add('activities_title')
+  })
+} else if (currentLanguage === 'UA') {
+  activitiesTitles.forEach(title => {
+    title.classList.remove('activities_title')
+  })
+}

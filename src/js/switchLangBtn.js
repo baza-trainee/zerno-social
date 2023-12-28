@@ -9,6 +9,9 @@ const switchButtonSpan = document.querySelector(
   '.language-dropdown  button  span '
 );
 
+const activitiesBlock = document.querySelector('.activities');
+const activitiesTitles = activitiesBlock.querySelectorAll('h3');
+
 function toggleLanguageOptions() {
   languageOptions.classList.toggle('hidden');
 
@@ -61,10 +64,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
   uaButton.addEventListener('click', function () {
     switchLanguage('UA');
+
+    activitiesTitles.forEach(title => {
+      title.classList.remove('activities_title')
+    })
   });
 
   enButton.addEventListener('click', function () {
     switchLanguage('EN');
+
+    activitiesTitles.forEach(title => {
+      title.classList.add('activities_title')
+    })
   });
   chengeLang();
 });

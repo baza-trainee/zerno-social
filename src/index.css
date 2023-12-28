@@ -185,3 +185,9 @@
   bottom: 0;
   position: relative;
 }
+
+.activities_title {
+  min-height: 56px;
+  max-height: 84px;
+  vertical-align: center;
+}
