@@ -688,6 +688,10 @@ export default {
     ua: 'Підтримати проєкт',
     en: 'Support the project',
   },
+  modal_7: {
+    ua: 'Введіть суму',
+    en: 'Enter the amount',
+  },
   partners_0: {
     ua: 'Наші партнери',
     en: 'Our partners',
