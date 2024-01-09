@@ -1,4 +1,5 @@
 import './js/languageTranslate';
+import './js/themeBtn'
 import './js/menu';
 import './js/faq';
 import './js/directions';

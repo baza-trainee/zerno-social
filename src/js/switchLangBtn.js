@@ -84,7 +84,6 @@ const chengeLang = () => {
   for (const key in languageTranslate) {
     const elem = document.querySelector(`[data-lang=${key}]`);
     if (!elem) continue;
-    // console.log(key);
     if (key === 'modal_7') {
       elem.placeholder = languageTranslate[key][activeLanguage.toLowerCase()];
     } else {
