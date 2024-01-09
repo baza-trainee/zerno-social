@@ -66,16 +66,16 @@ document.addEventListener('DOMContentLoaded', function () {
     switchLanguage('UA');
 
     activitiesTitles.forEach(title => {
-      title.classList.remove('activities_title')
-    })
+      title.classList.remove('activities_title');
+    });
   });
 
   enButton.addEventListener('click', function () {
     switchLanguage('EN');
 
     activitiesTitles.forEach(title => {
-      title.classList.add('activities_title')
-    })
+      title.classList.add('activities_title');
+    });
   });
   chengeLang();
 });
@@ -83,6 +83,12 @@ document.addEventListener('DOMContentLoaded', function () {
 const chengeLang = () => {
   for (const key in languageTranslate) {
     const elem = document.querySelector(`[data-lang=${key}]`);
-    elem.textContent = languageTranslate[key][activeLanguage.toLowerCase()];
+    if (!elem) continue;
+    // console.log(key);
+    if (key === 'modal_7') {
+      elem.placeholder = languageTranslate[key][activeLanguage.toLowerCase()];
+    } else {
+      elem.textContent = languageTranslate[key][activeLanguage.toLowerCase()];
+    }
   }
 };
