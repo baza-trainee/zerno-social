@@ -142,6 +142,7 @@
           type="number"
           pattern="[0-9]*"
           inputmode="numeric"
+          oninput="value < 1 ? (value = '') : null"
           oninput="this.value = this.value.replace(/[^0-9]/g, '');"
           value=""
           min="1"
