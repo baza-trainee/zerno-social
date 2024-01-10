@@ -35,14 +35,6 @@
   @apply opacity-0 -z-10;
 }
 
-/* .theme-dark {
-  @apply translate-x-[26px] 
-}
-
-.theme-light {
-  @apply translate-x-1
-} */
-
 .directionsSwiper .swiper-slide {
   width: fit-content !important;
 }
