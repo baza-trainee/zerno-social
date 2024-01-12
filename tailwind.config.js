@@ -34,10 +34,10 @@ module.exports = {
       yellow: '#DFB53B',
       black: '#474745',
       gray: '#DAD8D5',
-      grayLight: '#EFEFEE',
+      grayLight: '#FFFFFF',
       white: '#FFF',
       blue: '#0088CC',
-      darkTheme:'#07090A'
+      darkTheme: '#07090A',
     },
     extend: {},
   },
