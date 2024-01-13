@@ -25,7 +25,7 @@
             name="amount"
           />
           <label
-            class="inline-flex bg-grayLight dark:bg-black dark:text-beige justify-center items-center w-20 sm:w-24 lg:w-auto lg:px-4 h-8 border border-black dark:border-beige dark:border-beige rounded-lg border-solid transition-colors hover:border-yellow cursor-pointer"
+            class="inline-flex bg-grayLight dark:bg-black dark:text-beige justify-center items-center w-20 sm:w-24 lg:w-auto lg:px-4 h-8 border border-black dark:border-beige rounded-lg border-solid transition-colors hover:border-yellow cursor-pointer"
             for="50"
             >50 UAH</label
           >
@@ -88,7 +88,7 @@
         </div>
       </div>
       <div class="flex justify-center gap-3 lg:gap-8 xxl:gap-11 lg:mt-[-22px]">
-        <div class="hidden md:block">
+        <div>
           <input
             class="appearance-none"
             type="radio"
@@ -103,7 +103,7 @@
             >Одноразово</label
           >
         </div>
-        <div>
+        <div class="hidden md:block">
           <input
             class="appearance-none"
             type="radio"
@@ -140,29 +140,31 @@
           data-lang="modal_7"
           class="appearance-none py-5 px-2 w-full dark:placeholder:text-beige bg-grayLight dark:bg-black dark:text-beige border border-black dark:border-beige rounded-lg border-solid transition-colors hover:border-yellow focus-visible:outline-yellow"
           type="number"
-          pattern="[0-9]*"
-          inputmode="numeric"
-          oninput="value < 1 ? (value = '') : null"
-          oninput="this.value = this.value.replace(/[^0-9]/g, '');"
           value=""
           min="1"
+          name="enterAmount"
           placeholder="Введіть суму"
+          autocomplete="off"
         />
-        <span class="absolute right-2 top-[22px] bg-grayLight dark:bg-black dark:text-beige">UAH</span>
+        <span
+          class="absolute right-2 top-[22px] bg-grayLight dark:bg-black dark:text-beige"
+          >UAH</span
+        >
       </div>
-      <!-- <button
-        class="bg-greenBTN text-white text-[22px] py-[14px] lg:py-[4px] xl:py-[9px] xxl:py-[14px] rounded-lg sm:px-[23px] text-[34px] lg:text-[22px] xl:text-2xl xxl:text-[34px] w-full sm:w-[400px] lg:w-[260px] xxl:w-[360px] xxxl:w-[410px] outline-none transition-all hover:outline-2 hover:outline-offset-4 hover:outline-greenBTN"
+      <button
+        class="bg-greenBTN text-center text-white dark:text-beige py-[14px] lg:mt-7 lg:py-[4px] xl:py-[9px] xxl:py-[14px] rounded-lg sm:px-[23px] text-[34px] lg:text-[22px] xl:text-2xl xxl:text-[34px] w-full sm:w-[400px] lg:w-96 outline-none transition-all hover:outline-2 hover:outline-offset-4 hover:outline-greenBTN"
         type="submit"
+        data-lang="modal_6"
       >
         Підтримати проєкт
-      </button> -->
-      <a
+      </button>
+      <!-- <a
         href="https://send.monobank.ua/jar/6hjFL2zS5U"
         target="_blank"
         class="bg-greenBTN text-center text-white dark:text-beige py-[14px] lg:mt-7 lg:py-[4px] xl:py-[9px] xxl:py-[14px] rounded-lg sm:px-[23px] text-[34px] lg:text-[22px] xl:text-2xl xxl:text-[34px] w-full sm:w-[400px] lg:w-96 outline-none transition-all hover:outline-2 hover:outline-offset-4 hover:outline-greenBTN"
         data-lang="modal_6"
         >Підтримати проєкт</a
-      >
+      > -->
     </form>
     <button
       donat-close-btn

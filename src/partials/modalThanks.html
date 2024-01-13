@@ -1,0 +1,24 @@
+<div
+  data-thanks
+  class="fixed flex justify-center top-0 left-0 w-full h-[100vh] bg-black/40 overflow-y-scroll z-[9999] hidden"
+>
+  <div
+    class="absolute top-1/2 -translate-y-1/2 w-full lg:w-[744px] xxl:w-[800px] bg-white dark:bg-darkTheme dark:text-green lg:py-16 xxl:py-20 p-5"
+  >
+    <h2 class="text-3xl text-center text-green mb-5" data-lang="modalThanks_1">
+      Ваш донат отримано, дякуємо за підтримку
+    </h2>
+    <svg class="mx-auto w-[114px] h-[38px] lg:w-[180px] lg:h-[60px]">
+      <use href="images/sprite.svg#icon-zernoLogo"></use>
+    </svg>
+    <button
+      thanks-close-btn
+      class="absolute right-3 top-3 md:right-5 md:top-5 transition-opacity hover:opacity-50"
+      type="button"
+    >
+      <svg class="w-6 h-6 xl:w-8 xl:h-8 fill-black dark:fill-green">
+        <use href="images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+</div>

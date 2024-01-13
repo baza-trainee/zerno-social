@@ -784,4 +784,8 @@ export default {
     ua: 'Україна.',
     en: 'Ukraine.',
   },
+  modalThanks_1: {
+    ua: 'Ваш донат отримано, дякуємо за підтримку',
+    en: 'Your donation has been received, thank you for your support',
+  },
 };
