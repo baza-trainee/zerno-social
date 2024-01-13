@@ -785,7 +785,7 @@ export default {
     en: 'Ukraine.',
   },
   modalThanks_1: {
-    ua: 'Команда Зерно, дякує Вам за підтримку.',
-    en: 'The Zerno team thanks you for your support.',
+    ua: 'Ваш донат отримано, дякуємо за підтримку',
+    en: 'Your donation has been received, thank you for your support',
   },
 };
