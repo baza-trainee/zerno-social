@@ -71,6 +71,7 @@ categoryItems.forEach(item => {
       });
 
       activitiesSwiper.update();
+      activitiesSwiper.setProgress(0, 500);
       categoriesContainer.classList.add('max-lg:hidden');
     }
   });
@@ -86,10 +87,10 @@ closeButton.addEventListener('click', () => {
 
 if (currentLanguage === 'EN') {
   activitiesTitles.forEach(title => {
-    title.classList.add('activities_title')
-  })
+    title.classList.add('activities_title');
+  });
 } else if (currentLanguage === 'UA') {
   activitiesTitles.forEach(title => {
-    title.classList.remove('activities_title')
-  })
+    title.classList.remove('activities_title');
+  });
 }
