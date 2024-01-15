@@ -13,7 +13,7 @@
       class="lg:flex lg:flex-wrap lg:gap-[20px] xl:gap-[30px] lg:justify-center"
     >
       <li
-        class="gallery-slide w-[226px] h-[174px] lg:w-[300px] lg:h-[300px] xl:w-[380px] xl:h-[326px] xxl:w-[426px] xxl:h-[400px] flex justify-center items-center overflow-hidden rounded-xl"
+        class="gallery-slide h-[70vw] w-[310px] md:w-[226px] sm:h-[174px] lg:w-[300px] lg:h-[300px] xl:w-[380px] xl:h-[326px] xxl:w-[426px] xxl:h-[400px] flex justify-center items-center overflow-hidden rounded-xl"
       >
         <img
           class="w-full h-full object-cover object-center"
@@ -22,7 +22,7 @@
         />
       </li>
       <li
-        class="gallery-slide w-[226px] h-[174px] lg:w-[300px] lg:h-[300px] xl:w-[380px] xl:h-[326px] xxl:w-[426px] xxl:h-[400px] flex justify-center items-center overflow-hidden rounded-xl"
+        class="gallery-slide h-[70vw] w-[310px] md:w-[226px] sm:h-[174px] lg:w-[300px] lg:h-[300px] xl:w-[380px] xl:h-[326px] xxl:w-[426px] xxl:h-[400px] flex justify-center items-center overflow-hidden rounded-xl"
       >
         <img
           class="w-full h-full object-cover object-center"
@@ -31,7 +31,7 @@
         />
       </li>
       <li
-        class="gallery-slide w-[226px] h-[174px] lg:w-[300px] lg:h-[300px] xl:w-[380px] xl:h-[326px] xxl:w-[426px] xxl:h-[400px] flex justify-center items-center overflow-hidden rounded-xl"
+        class="gallery-slide h-[70vw] w-[310px] md:w-[226px] sm:h-[174px] lg:w-[300px] lg:h-[300px] xl:w-[380px] xl:h-[326px] xxl:w-[426px] xxl:h-[400px] flex justify-center items-center overflow-hidden rounded-xl"
       >
         <img
           class="w-full h-full object-cover object-center"
@@ -40,7 +40,7 @@
         />
       </li>
       <li
-        class="gallery-slide w-[226px] h-[174px] lg:w-[300px] lg:h-[300px] xl:w-[380px] xl:h-[326px] xxl:w-[426px] xxl:h-[400px] flex justify-center items-center overflow-hidden rounded-xl"
+        class="gallery-slide h-[70vw] w-[310px] md:w-[226px] sm:h-[174px] lg:w-[300px] lg:h-[300px] xl:w-[380px] xl:h-[326px] xxl:w-[426px] xxl:h-[400px] flex justify-center items-center overflow-hidden rounded-xl"
       >
         <img
           class="w-full h-full object-cover"
@@ -49,7 +49,7 @@
         />
       </li>
       <li
-        class="gallery-slide w-[226px] h-[174px] lg:w-[300px] lg:h-[300px] xl:w-[380px] xl:h-[326px] xxl:w-[426px] xxl:h-[400px] flex justify-center items-center overflow-hidden rounded-xl"
+        class="gallery-slide h-[70vw] w-[310px] md:w-[226px] sm:h-[174px] lg:w-[300px] lg:h-[300px] xl:w-[380px] xl:h-[326px] xxl:w-[426px] xxl:h-[400px] flex justify-center items-center overflow-hidden rounded-xl"
       >
         <img
           class="w-full h-full object-cover"
@@ -58,7 +58,7 @@
         />
       </li>
       <li
-        class="gallery-slide w-[226px] h-[174px] lg:w-[300px] lg:h-[300px] xl:w-[380px] xl:h-[326px] xxl:w-[426px] xxl:h-[400px] flex justify-center items-center overflow-hidden rounded-xl"
+        class="gallery-slide h-[70vw] w-[310px] md:w-[226px] sm:h-[174px] lg:w-[300px] lg:h-[300px] xl:w-[380px] xl:h-[326px] xxl:w-[426px] xxl:h-[400px] flex justify-center items-center overflow-hidden rounded-xl"
       >
         <img
           class="w-full h-full object-cover"
@@ -95,21 +95,19 @@
     buttonNext.classList.add('gallery-swiper-button-next');
 
     const swiper = new Swiper(gallerySwiperContainer, {
-      slidesPerView: 2,
-      spaceBetween: 0,
+      slidesPerView: 1,
+      spaceBetween: 20,
       centeredSlidesBounds: true,
       navigation: {
         nextEl: '.gallery-swiper-button-next',
         prevEl: '.gallery-swiper-button-prev',
       },
       breakpoints: {
-        320: {
-          slidesPerView: 'auto',
-          spaceBetween: 20,
+        480: {
+          slidesPerView: 2,
         },
         768: {
           slidesPerView: 3,
-          spaceBetween: 20,
         },
       },
     });
