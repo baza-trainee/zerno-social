@@ -599,10 +599,9 @@ export default {
     ua: 'Пані Христина - засновниця організації',
     en: 'Ms. Khrystyna is the founder of the organization',
   },
-  //!   тимчасовий текст
   founder_2: {
-    ua: 'Пані Христина, засновниця "Зерно", - віддана та творча особистість, яка з любов\'ю вкладає свою енергію у волонтерську діяльність. Її візія та наполегливість роблять наш світ кращим, а кожен крок - сходженням до позитивних змін.',
-    en: 'Ms. Khrystyna, the founder of Zerno, is a dedicated and creative person who lovingly puts her energy into volunteer work. Her vision and perseverance make our world a better place, and every step she takes is a stairway to positive change.',
+    ua: 'Христина Патик - засновниця ГО "Зерно", віддана і творча особистість, яка вкладає всю енергію та любов в проєкт. Її візія і завзята робота роблять наш світ кращим, а кожен крок призводить до позитивних змін.',
+    en: 'Khrystyna Patyk is the founder of Zerno, a dedicated and creative person who puts all her energy and love into the project. Her vision and hard work make our world a better place, and every step she takes leads to positive change.',
   },
   gallery_1: {
     ua: 'Галерея',
